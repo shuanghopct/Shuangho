@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>司會參考資料</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      display: flex;
+    }
+
+    /* 側邊導覽欄 */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #0078d7;
+      padding: 20px 10px;
+      box-sizing: border-box;
+    }
+    nav h2 {
+      color: #fff;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      margin: 12px 0;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 8px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #005a9e;
+    }
+
+    /* 主要內容 */
+    .content {
+      margin-left: 220px; /* 留出側邊欄的空間 */
+      padding: 40px;
+      flex: 1;
+    }
+    h1 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .category {
+      margin: 50px 0;
+    }
+    .category h2 {
+      font-size: 1.3em;
+      margin-bottom: 15px;
+      color: #0078d7;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    .link-list li {
+      margin: 12px 0;
+    }
+    .link-list a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #0078d7;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .link-list a:hover {
+      background-color: #005a9e;
+    }
+
+    /* QR Code 樣式 */
+    .qrcode-container {
+      display: flex;
+      gap: 100px; /* 調整 QR Code 間距 */
+      align-items: center; /* 垂直置中 */
+      margin-top: 10px; /* 調整與上方連結的間距 */
+    }
+    .qrcode-container img {
+      width: 200px; /* 調整 QR Code 圖片大小 */
+      height: 200px;
+      border: 1px solid #ccc; /* 可選：加上邊框 */
+      border-radius: 5px; /* 可選：加上圓角 */
+    }
+    .qrcode-container span {
+      font-size: 0.9em;
+      color: #555;
+      display: block; /* 讓文字佔據一行 */
+      text-align: center; /* 文字置中 */
+      margin-bottom: 5px; /* 調整文字與圖片的間距 */
+    }
+    .app-title {
+      font-size: 1.2em; /* 調整文字大小 */
+      font-weight: bold; /* 設定為粗體 */
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>導覽</h2>
+    <ul>
+      <li><a href="#search">聖經與啟應文</a></li>
+      <li><a href="#hymnsvocal">台語聖詩(有人聲)</a></li>
+      <li><a href="#hymns">台語聖詩(無人聲)</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>司會參考資料</h1>
+
+    <div id="search" class="category">
+      <h2>聖經與啟應文</h2>
+      <ul class="link-list">
+        <li><a href="https://bible.fhl.net/new/audio_hb.php?version=1" target="_blank">台語有聲聖經網站</a>
+          <div class="qrcode-container">
+            <div>
+              <span class="app-title">IOS 台語有聲聖經APP</span><br>
+              <img src="IMAGES/qrcode_apps.apple.com.png" alt="IOS QR Code">
+            </div>
+            <div>
+              <span class="app-title">Android 台語有聲聖經APP</span><br>
+              <img src="IMAGES/qrcode_play.google.com.png" alt="Android QR Code">
+            </div>
+          </div>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=3BM6C3Npb_8&list=PLa5Ky5ANCrzzet0bHbwnjyyLswor_V0Wa"  target="_blank">啟應文(點進去後右邊有播放清單可選)</a></li>
+      </ul>
+    </div>
+
+    <div id="hymns" class="category">
+      <h2>台語聖詩(有人聲)</h2>
+      <ul class="link-list">
+        <li><a href="https://www.youtube.com/@user-aprilro/featured" target="_blank">直接在播放清單旁邊的搜尋鍵搜尋</a></li>
+      </ul>
+    </div>
+
+    <div id="hymns" class="category">
+      <h2>台語聖詩(無人聲)</h2>
+      <ul class="link-list">
+        <li><a href="http://youtu.be/y990k6j4ErE" target="_blank">001 聖哉 聖哉 聖哉</a></li>
+        <li><a href="http://youtu.be/npH1c8TYL1M" target="_blank">002 聖哉 聖哉 聖哉</a></li>
+        <li><a href="http://youtu.be/T27e0rx_rzA" target="_blank">003 亞伯蘭的上帝</a></li>
+        <li><a href="http://youtu.be/7PG88yUtCrs" target="_blank">004 天下萬國眾人著聽</a></li>
+        <li><a href="http://www.youtube.com/watch?v=hauWSIDQrvY" target="_blank">005 真主上帝造天地</a></li>
+        <li><a href="http://youtu.be/0vH1l3l1ko0" target="_blank">006 上帝創造天及地</a></li>
+        <li><a href="http://youtu.be/QQTZSwoopNo" target="_blank">007 行佇山林小路吟詩謳咾</a></li>
+        <li><a href="http://youtu.be/WzvcV7HU9Jo" target="_blank">008 攑目觀看穹蒼無窮</a></li>
+        <li><a href="http://youtu.be/yf3lqzJwCSY" target="_blank">009 萬有相及聚集歡喜</a></li>
+        <li><a href="http://youtu.be/yc5VagMXNcE" target="_blank">010 靜 我恬靜追尋主上帝</a></li>
+        <li><a href="http://youtu.be/mOoStKVlHyo" target="_blank">011 宇宙主宰 你何等偉大</a></li>
+        <li><a href="http://youtu.be/lw1Rh1_N7PM" target="_blank">012 主 你所做偉大美無比</a></li>
+        <li><a href="http://youtu.be/O94yeCkzaZ0" target="_blank">013 大太陽照彩虹</a></li>
+        <li><a href="http://youtu.be/VrbGyCBDgnU" target="_blank">014霹靂啪啦 霹啪叫</a></li>
+        <li><a href="http://www.youtube.com/watch?v=4Lj2ZJ5NkCM" target="_blank">014(日語) 霹靂啪啦劈啪叫</a></li>
+        <li><a href="http://youtu.be/6F3xfAb1hxE" target="_blank">015 萬有光明極美麗</a></li>
+        <li><a href="http://youtu.be/57EJoWL7OS0" target="_blank">016 咱著對主唱歌</a></li>
+        <li><a href="http://youtu.be/389C1wYkYA4" target="_blank">017 著向主上帝唱新歌</a></li>
+        <li><a href="http://youtu.be/IL9TSyHcvJI" target="_blank">018 我心謳咾上帝</a></li>
+        <li><a href="http://www.youtube.com/watch?v=xhdusCgLSPM&feature=youtu.be" target="_blank">019 為著美麗的地面</a></li>
+        <li><a href="http://youtu.be/A_Sofq6YX7A" target="_blank">020 聖父上帝惦天頂</a></li>
+        <li><a href="http://youtu.be/0Dnz4NEwIsI" target="_blank">021 主 你無所不在</a></li>
+        <li><a href="http://youtu.be/jAooUdOPNmI" target="_blank">022 主上帝正手</a></li>
+        <li><a href="http://youtu.be/VF5JDSk_Ylg" target="_blank">023 雀鳥的主 海翁的主</a></li>
+        <li><a href="http://youtu.be/iWYXRjWSqQs" target="_blank">024 我心謳咾至高上帝</a></li>
+        <li><a href="http://youtu.be/qVwgvuNyJRE" target="_blank">025 奇妙聖名 至聖閣美麗</a></li>
+        <li><a href="http://youtu.be/yINUkxhOrWE" target="_blank">026 今阮感謝上帝</a></li>
+        <li><a href="http://youtu.be/CDrU3PmgUvQ" target="_blank">027 我主上帝</a></li>
+        <li><a href="http://youtu.be/gNtvAYfES2c" target="_blank">028 天父看著雀鳥跋落</a></li>
+        <li><a href="http://youtu.be/gW8mAUfVR-E" target="_blank">029 啥人創造天及地</a></li>
+        <li><a href="http://youtu.be/r1FiTFWZV9c" target="_blank">030 細漢囝仔謳咾天父</a></li>
+        <li><a href="http://youtu.be/G77BAYXTuqY" target="_blank">031 天父疼咱世間眾人</a></li>
+        <li><a href="http://youtu.be/mg0htVDF-js" target="_blank">032 上主作咱天頂父親</a></li>
+        <li><a href="http://youtu.be/o3w8qu7VyMw" target="_blank">033 (台語) 天頂阿爸真正慈悲啊</a></li>
+        <li><a href="http://youtu.be/KRMqpLkmq24" target="_blank">033 (華語) 天上的父親大慈悲呀</a></li>
+        <li><a href="http://youtu.be/pB5YrYgDzQk" target="_blank">034 天父上帝至大仁愛</a></li>
+        <li><a href="http://youtu.be/jMZq90LDJPs" target="_blank">035 主 我上帝至尊至大</a></li>
+        <li><a href="http://youtu.be/epkgVOQE6VA" target="_blank">036 上帝的恩惠慈悲</a></li>
+        <li><a href="http://youtu.be/Amh2aNxfbp0" target="_blank">037 (台語) 天父上帝賜豐年</a></li>
+        <li><a href="http://youtu.be/ZnVLQ2bY6q0" target="_blank">037 (客語) 天父上帝賜恩年</a></li>
+        <li><a href="http://youtu.be/BBMhbPtn-xU" target="_blank">038 謳咾全能的主上帝</a></li>
+        <li><a href="http://youtu.be/Xn8uAZgGzBA" target="_blank">039 謳咾主 敬拜主到萬代</a></li>
+        <li><a href="http://youtu.be/9ZZiwANsJIc" target="_blank">040 我目攑起向天</a></li>
+        <li><a href="http://youtu.be/XeRJ3XlP9qs" target="_blank">041 請來 請來 以馬內利</a></li>
+        <li><a href="http://youtu.be/ZpxwLZWHPEo" target="_blank">042 請來耶穌 阮所向望</a></li>
+        <li><a href="http://youtu.be/BN8MgIOynr8" target="_blank">043 世間眾人攏著恬靜</a></li>
+        <li><a href="http://youtu.be/xbUU7xLGhPQ" target="_blank">044 我心尊敬我主做大</a></li>
+        <li><a href="http://youtu.be/u9BgyNF3hcI" target="_blank">045 謳咾大闢的後裔</a></li>
+        <li><a href="http://youtu.be/VI7ljgzhmUE" target="_blank">046 聖主欲再臨無延遲</a></li>
+        <li><a href="http://youtu.be/Gn-MEju8ino" target="_blank">047 上帝獨生子</a></li>
+        <li><a href="http://youtu.be/effQ1q0qxlU" target="_blank">048 平安暝 聖誕暝</a></li>
+        <li><a href="http://youtu.be/1lyAKOOKAZk" target="_blank">049 (台語) 聖誕暝 真安靜</a></li>
+        <li><a href="http://youtu.be/9Ap2xFhokrc" target="_blank">049 (華語) 聖夜清 聖夜靜</a></li>
+        <li><a href="http://youtu.be/itN8LiPbZlw" target="_blank">050 細細的城市伯利恆</a></li>
+        <li><a href="http://youtu.be/JbQKEQXrNS4" target="_blank">051 (台語) 星辰燦爛照暗暝</a></li>
+        <li><a href="http://youtu.be/wLxzza-8wlE" target="_blank">052 早佇大闢王的城裡</a></li>
+        <li><a href="http://youtu.be/mok2OvjSJAM" target="_blank">053 佇清靜的暗暝</a></li>
+        <li><a href="http://youtu.be/eklRUv4COCs" target="_blank">054 天使歌聲對天來</a></li>
+        <li><a href="http://youtu.be/yNoAj-juo6M" target="_blank">055 著聽天使在吟講</a></li>
+        <li><a href="http://youtu.be/qSI7qA3aSMg" target="_blank">056 請聽天使歡喜的聲</a></li>
+        <li><a href="http://www.youtube.com/watch?v=xQ3kWKVN_Cs" target="_blank">057 早前有天使對天出聲叫</a></li>
+        <li><a href="http://youtu.be/6o97BPTk9Yo" target="_blank">058 萬王的王 主的主</a></li>
+        <li><a href="http://youtu.be/ReTh39PWw4k" target="_blank">059 是啥嬰兒安然在睏</a></li>
+        <li><a href="http://youtu.be/WVdA4T39S0E" target="_blank">060 槽內的嬰兒</a></li>
+        <li><a href="http://youtu.be/GNIHemG5Sg4" target="_blank">061 佇ㄧ個羊廄裡</a></li>
+        <li><a href="http://youtu.be/LSHSv5N-y_8" target="_blank">062 至聖嬰仔 謙卑嬰仔</a></li>
+        <li><a href="http://youtu.be/NN9fYpGYhdw" target="_blank">063 基督降世彼一時</a></li>
+        <li><a href="http://youtu.be/EaQfQeMcn8I" target="_blank">064 喜樂和平兒</a></li>
+        <li><a href="http://youtu.be/jMMFyint140" target="_blank">065 天父可憐世人艱苦</a></li>
+        <li><a href="http://youtu.be/3E13vVD38eI" target="_blank">066 聖子耶穌對天降臨</a></li>
+        <li><a href="http://youtu.be/kH6y4YmmZ1s" target="_blank">067 世間萬有未成彼時</a></li>
+        <li><a href="http://youtu.be/UlbNaxR7STc" target="_blank">068 主耶穌放棄你寶座冕旒</a></li>
+        <li><a href="http://youtu.be/Ac4CBAl7dVA" target="_blank">069 請來 忠誠信徒</a></li>
+        <li><a href="http://youtu.be/t5-gOvqDYOE" target="_blank">070 普天同慶主臨世界</a></li>
+        <li><a href="http://youtu.be/0nBQMuB-Elg" target="_blank">071 基督世界真光</a></li>
+        <li><a href="http://youtu.be/8KaKHPE9Tzg" target="_blank">072 耶穌 阮佇叨位尋你</a></li>
+        <li><a href="http://youtu.be/8VbzhPEO190" target="_blank">073 細漢囝仔 恁著來聽</a></li>
+        <li><a href="http://youtu.be/X-ZdiVrHrVs" target="_blank">074 看嬰兒倒佇槽內</a></li>
+        <li><a href="http://youtu.be/1zqv5MJStdQ" target="_blank">075 我主故鄉拿撒勒</a></li>
+        <li><a href="http://youtu.be/bASAVBPiJKo" target="_blank">076 上帝差他獨生子兒</a></li>
+        <li><a href="http://youtu.be/KgdhBuBrdxw" target="_blank">077 約旦河邊約翰講明</a></li>
+        <li><a href="http://youtu.be/D2iqf7jKUnc" target="_blank">078 耶穌 耶穌 用疼充滿阮</a></li>
+        <li><a href="http://youtu.be/BMyGa6Kb55s" target="_blank">079 救主疼痛純真無限</a></li>
+        <li><a href="http://youtu.be/2kigDSYyG0w" target="_blank">080 啊 對主耶穌目神</a></li>
+        <li><a href="http://youtu.be/BNcTeg7GawI" target="_blank">081 主溫柔仁愛聲音</a></li>
+        <li><a href="http://youtu.be/49QJo0ap9Hw" target="_blank">082 雖然ㄧ人 我無孤單</a></li>
+        <li><a href="http://youtu.be/7IjRh3zYnnY" target="_blank">083 耶穌基督聽候</a></li>
+        <li><a href="http://youtu.be/B9d4_dWDrXM" target="_blank">084 大家大歡喜 謳咾來吟詩</a></li>
+        <li><a href="http://youtu.be/WdNfvts-Nms" target="_blank">085 無限榮光及謳咾</a></li>
+        <li><a href="http://youtu.be/qlm1uPyJ6nM" target="_blank">086 威嚴君王騎驢進前</a></li>
+        <li><a href="http://youtu.be/th7PEroEv4k" target="_blank">087 客西馬尼花園內面</a></li>
+        <li><a href="http://youtu.be/FR2-6qvwUYY" target="_blank">088 主受釘彼時 你有佇遐無</a></li>
+        <li><a href="http://youtu.be/-jKE1jpZQCQ" target="_blank">089 聖主頭額今受傷</a></li>
+        <li><a href="http://youtu.be/ED_LFmCS4D8" target="_blank">090 天變烏暗親像暝時</a></li>
+        <li><a href="http://youtu.be/x5Xhx2UUU90" target="_blank">091 有一個城離咱真遠</a></li>
+        <li><a href="http://youtu.be/D5FLb81UrV0" target="_blank">092 傷心數念我主流血</a></li>
+        <li><a href="http://youtu.be/81NKVH9nRPw" target="_blank">093 大家著看上帝聖羔</a></li>
+        <li><a href="http://youtu.be/rV6nNavuJd0" target="_blank">094 佇主十架蔭影下</a></li>
+        <li><a href="http://youtu.be/CWuFnrCJ9ro" target="_blank">095 我心仰望十字寶架</a></li>
+        <li><a href="http://youtu.be/AmBKEYh5JFk" target="_blank">096 你為甚麼放捨我</a></li>
+        <li><a href="http://youtu.be/b_Ncs3qvxxI" target="_blank">097 救主佇墳墓內</a></li>
+        <li><a href="http://youtu.be/Vr2aQRbAUgQ" target="_blank">098 基督復活 唱和撒那</a></li>
+        <li><a href="http://youtu.be/qjhFayWb1lg" target="_blank">099 基督復活 基督永活</a></li>
+        <li><a href="http://youtu.be/pOHg6bwq3dc" target="_blank">100 佇這復活日子</a></li>
+        <li><a href="http://youtu.be/bUgcUTqovHY" target="_blank">101 救主復活的早起</a></li>
+        <li><a href="http://youtu.be/OPq1DCeTUOo" target="_blank">102 哈利路亞 祂有復活</a></li>
+        <li><a href="https://www.youtube.com/watch?v=BqUzdxhy8ho" target="_blank">103 恁攏免驚</a></li>
+        <li><a href="http://youtu.be/pw08aDYtYZA" target="_blank">104 耶穌真正死復活</a></li>
+        <li><a href="http://youtu.be/aoSF1l_AIlM" target="_blank">105 交戰結束 苦難攏息</a></li>
+        <li><a href="http://youtu.be/08qxOToNirA" target="_blank">106 我今實在免閣傷悲</a></li>
+        <li><a href="http://youtu.be/0WPrhgqjl9k" target="_blank">107 在早佇郇城</a></li>
+        <li><a href="http://youtu.be/UCf52kAXgLg" target="_blank">108 祂來唱仁愛</a></li>
+        <li><a href="http://youtu.be/yx8c4JoAqN4" target="_blank">109 歡喜 我主作王</a></li>
+        <li><a href="http://youtu.be/3ie8g-VtoOc" target="_blank">110 謳咾 榮光 尊貴以及權勢</a></li>
+        <li><a href="http://youtu.be/JjIqA4eqpSE" target="_blank">111 耶穌受死 我得赦免</a></li>
+        <li><a href="http://youtu.be/q6g4LLe8dXE" target="_blank">112 主寶血會洗清咱</a></li>
+        <li><a href="http://youtu.be/cj973RdFQxM" target="_blank">113 我來朝見你 救贖我的主</a></li>
+        <li><a href="http://youtu.be/YMxYMiYcZYE" target="_blank">114 佇十字架救主受死</a></li>
+        <li><a href="http://youtu.be/j2Fsrfqmma8" target="_blank">115 十字架頂耶穌受釘死</a></li>
+        <li><a href="http://youtu.be/1qnJD_EUkpI" target="_blank">116 道成肉體來出世</a></li>
+        <li><a href="http://youtu.be/stdBn2Sab3s" target="_blank">117 何等奇妙疼痛</a></li>
+        <li><a href="http://youtu.be/vnjnQMoRcJs" target="_blank">118 上帝為咱 疼痛不變</a></li>
+        <li><a href="http://youtu.be/pn2aqR3FqMk" target="_blank">119 上帝的子基督</a></li>
+        <li><a href="http://youtu.be/TiV3clBcrOw" target="_blank">120 上帝權能實在奧妙</a></li>
+        <li><a href="http://youtu.be/iDDpc9-huNM" target="_blank">121 上帝疼愛贏過ㄧ切</a></li>
+        <li><a href="http://youtu.be/JqTM67FxfQQ" target="_blank">121(441) 上帝疼愛贏過ㄧ切</a></li>
+        <li><a href="http://youtu.be/NKyH4_HdFyA" target="_blank">122 替我拍破石磐身</a></li>
+        <li><a href="http://youtu.be/3oG8IUcgJ5Q" target="_blank">123 至尊上帝至仁愛</a></li>
+        <li><a href="http://youtu.be/Ud6rZDkqaKA" target="_blank">124 請問你豈知</a></li>
+        <li><a href="http://youtu.be/V5WV4AaLXkk" target="_blank">125 美妙主耶穌</a></li>
+        <li><a href="http://youtu.be/MURB6PCbE14" target="_blank">126 美妙主耶穌</a></li>
+        <li><a href="http://youtu.be/MKPaqR4z30I" target="_blank">127 上帝將祂獨生聖子</a></li>
+        <li><a href="http://youtu.be/97QXhsWF4ds" target="_blank">128 主耶穌 我的主</a></li>
+        <li><a href="http://youtu.be/28YcZZDqsF0" target="_blank">129 活命米糧對天降臨</a></li>
+        <li><a href="http://youtu.be/kJW2-6fmMo0" target="_blank">130 耶穌尊名入我耳孔</a></li>
+        <li><a href="http://youtu.be/irhtHPmJGJM" target="_blank">131 人若抵著憂悶傷悲</a></li>
+        <li><a href="http://youtu.be/L4qXJR2dLo4" target="_blank">132 耶穌疼我 我知明</a></li>
+        <li><a href="http://youtu.be/LmGktBsKiNw" target="_blank">133 信徒 著來吟詩</a></li>
+        <li><a href="http://youtu.be/9OW1pQ04_1Q" target="_blank">134 老母早導子兒</a></li>
+        <li><a href="http://youtu.be/WmokV-KYaiQ" target="_blank">135 救主 願你做我牧者</a></li>
+        <li><a href="http://youtu.be/ILz2yABtlx0" target="_blank">136 耶穌作咱牧者</a></li>
+        <li><a href="http://youtu.be/gfvRgLAOCc4" target="_blank">137 羊九十九倒在平安</a></li>
+        <li><a href="http://youtu.be/lZNYmTEkH9c" target="_blank">138 耶穌原本是上帝</a></li>
+        <li><a href="http://youtu.be/iPvX4Dv0J7s" target="_blank">139 救主耶穌基督</a></li>
+        <li><a href="http://youtu.be/h6IKN7VnFs4" target="_blank">140 耶穌的手扶持我</a></li>
+        <li><a href="http://youtu.be/LtwmJbwkhKQ" target="_blank">141 勞苦背重擔著就近我</a></li>
+        <li><a href="http://youtu.be/rgd2wl-u3eI" target="_blank">142 見若日光所照的位</a></li>
+        <li><a href="http://youtu.be/n9pzf1dpEPY" target="_blank">142(248) 見若日光所照的位</a></li>
+        <li><a href="http://youtu.be/bLM22Nt0nVM" target="_blank">143 在早上帝聖旨立定</a></li>
+        <li><a href="http://youtu.be/zZPIGZN99lU" target="_blank">144 我心近倚施恩寶座</a></li>
+        <li><a href="http://youtu.be/dgIFK-xp4J0" target="_blank">145 我的救主降生伯利恆城</a></li>
+        <li><a href="http://youtu.be/01xSDHq0b6Q" target="_blank">146 救主出聲叫我</a></li>
+        <li><a href="http://youtu.be/lrP-9L5p3Ug" target="_blank">147 你豈有就近主互祂洗清氣</a></li>
+        <li><a href="http://youtu.be/TPNii1VSEAY" target="_blank">148 冬天過去 雨水停止</a></li>
+        <li><a href="http://youtu.be/jm9ejv1_u-E" target="_blank">148(華語) 冬天已過 雨水已止</a></li>
+        <li><a href="http://youtu.be/26v78Oei9u0" target="_blank">149 脫出罪惡 烏暗的交界</a></li>
+        <li><a href="http://youtu.be/1bfd2KOjmhc" target="_blank">150 我來親近耶穌</a></li>
+        <li><a href="http://youtu.be/uXHzh94XtKQ" target="_blank">151 主 我愛就近你</a></li>
+        <li><a href="http://youtu.be/f3QenpNyhG8" target="_blank">152 救主疼痛的聲</a></li>
+        <li><a href="http://youtu.be/gFHwff14nhU" target="_blank">153 我聽耶穌的聲講明</a></li>
+        <li><a href="http://youtu.be/8Vhc657fbho" target="_blank">154 救主 我親近你</a></li>
+        <li><a href="http://youtu.be/GSM7WtIqDvU" target="_blank">155 救主 我數念你的時</a></li>
+        <li><a href="http://youtu.be/3z6z4Gg4GUo" target="_blank">156 慈愛的父 所疼的主</a></li>
+        <li><a href="http://youtu.be/MOoUGtsmgBU" target="_blank">157 我欣慕救主耶穌</a></li>
+        <li><a href="http://youtu.be/yjigE8stidk" target="_blank">158 我有至好朋友</a></li>
+        <li><a href="http://youtu.be/EMfJgOD2F_I" target="_blank">159 主在我心內 無驚惶自在</a></li>
+        <li><a href="http://youtu.be/BWb13Gs9DfY" target="_blank">160 時刻我需要主</a></li>
+        <li><a href="http://youtu.be/B4wJ7B-JmJk" target="_blank">161 耶穌寶貴的名</a></li>
+        <li><a href="http://youtu.be/B0mvGsxhcGo" target="_blank">162 著用基督耶穌的心</a></li>
+        <li><a href="http://youtu.be/y0J7IOV-TBc" target="_blank">163 疼痛聖神 阮歡迎你</a></li>
+        <li><a href="http://youtu.be/jShzftCaG7U" target="_blank">164 至聖的神 聽阮祈禱</a></li>
+        <li><a href="http://youtu.be/9aBbvWTmu5c" target="_blank">165 疼痛聖神 求你降臨</a></li>
+        <li><a href="http://youtu.be/3EGz_31TNqM" target="_blank">166 主佇基列有芳乳香</a></li>
+        <li><a href="http://youtu.be/ozMFqnQfdNc" target="_blank">167 互地上有和平</a></li>
+        <li><a href="http://youtu.be/eiPW8TGAE2Y" target="_blank">168 求主聖神降臨</a></li>
+        <li><a href="http://youtu.be/V_5PBUnN6js" target="_blank">169 懇求聖神降臨</a></li>
+        <li><a href="http://youtu.be/iEbNL_WjXNM" target="_blank">170 懇求聖神感動阮心</a></li>
+        <li><a href="http://youtu.be/TNeRNM3TnJU" target="_blank">171 上帝所賜活命</a></li>
+        <li><a href="http://youtu.be/BHcrRpDIlqI" target="_blank">172 懇求聖神對天降臨</a></li>
+        <li><a href="http://youtu.be/f3oFa1iRlMI" target="_blank">173 懇求永活主聖神</a></li>
+        <li><a href="http://youtu.be/x17lfig1NEc" target="_blank">174 我欣慕真理的神</a></li>
+        <li><a href="http://youtu.be/LjD-Bm7A5HE" target="_blank">175 新的地 新的天</a></li>
+        <li><a href="http://youtu.be/MD8acpXUB3A" target="_blank">176 疼痛的神 降臨</a></li>
+        <li><a href="http://youtu.be/y69FKZgGdUM" target="_blank">177 這是重新出發的日子</a></li>
+        <li><a href="http://youtu.be/GqRpg549tl0" target="_blank">178 求主用你聖神來充滿我心</a></li>
+        <li><a href="http://youtu.be/jbRgIYuMwb0" target="_blank">179 榮光歸佇聖父上帝</a></li>
+        <li><a href="http://youtu.be/J1dRAPGGX1A" target="_blank">180 全能獨ㄧ的王</a></li>
+        <li><a href="http://youtu.be/Lc-wb79hc7k" target="_blank">181 同心謳咾天父</a></li>
+        <li><a href="http://youtu.be/8FeAKt4Yr5k" target="_blank">182 我信全能上帝</a></li>
+        <li><a href="http://youtu.be/KeVTJfcokyQ" target="_blank">183 上帝是我天父</a></li>
+        <li><a href="http://youtu.be/EpbIq2GEOIY" target="_blank">184 上帝疼痛哪會赫大</a></li>
+        <li><a href="http://youtu.be/agAG68JqzEw" target="_blank">185 造化的神 你佇早時</a></li>
+        <li><a href="http://youtu.be/KE8t9twbmXU" target="_blank">186 聖經親像面鏡</a></li>
+        <li><a href="http://youtu.be/3olDbujvX0E" target="_blank">187 佇聖經內面有三項事</a></li>
+        <li><a href="http://youtu.be/B9izkyGHYAQ" target="_blank">188 上帝聖經內面</a></li>
+        <li><a href="http://youtu.be/wJSmRFMbyi0" target="_blank">189 主賜活命米糧</a></li>
+        <li><a href="http://youtu.be/hBfHGXNV-f8" target="_blank">190 上主的法律完備</a></li>
+        <li><a href="http://youtu.be/f807hKmS-W4" target="_blank">190(華語) 上主的法律完備</a></li>
+        <li><a href="http://youtu.be/0l-8seIVzL0" target="_blank">191 你的話做阮腳前的燈</a></li>
+        <li><a href="http://youtu.be/tBre1NCJtl0" target="_blank">192 你的話若活水江河</a></li>
+        <li><a href="http://youtu.be/dthWQu_ylEk" target="_blank">193 上帝所賜活命的話</a></li>
+        <li><a href="http://youtu.be/y8ruNzHOWGg" target="_blank">194 開我目睭互我看見</a></li>
+        <li><a href="http://youtu.be/upSk0aYc5ME" target="_blank">195 我的心是土地</a></li>
+        <li><a href="http://youtu.be/tIOdfgy2HIE" target="_blank">196 無行歹人道路</a></li>
+        <li><a href="http://youtu.be/fospbsdTOnQ" target="_blank">197 列邦啥事亂亂喧嘩</a></li>
+        <li><a href="http://youtu.be/yI6zb2BEeow" target="_blank">198 謳咾稱呼至大上帝</a></li>
+        <li><a href="http://youtu.be/pRk6UwVplVY" target="_blank">199 主啊 啥人會通寄脚</a></li>
+        <li><a href="http://youtu.be/2edwJNAkvaY" target="_blank">200 天頂講起上帝榮光</a></li>
+        <li><a href="http://youtu.be/qIX6YOAaZvk" target="_blank">201 上主作我至好牧者</a></li>
+        <li><a href="http://youtu.be/8kfT5aZWo7I" target="_blank">202 上帝原本是我牧者</a></li>
+        <li><a href="http://youtu.be/eI5jUPH2YPw" target="_blank">203 地及其中所充滿的</a></li>
+        <li><a href="http://youtu.be/6OckCnVL8KY" target="_blank">204 城門著攑起恁的頭</a></li>
+        <li><a href="http://youtu.be/He8m7SB4P68" target="_blank">205 過失得赦 罪得遮蓋</a></li>
+        <li><a href="http://youtu.be/90-rPwCWzIc" target="_blank">206 至高的主作我的光</a></li>
+        <li><a href="http://youtu.be/RqRPEuWBJ9s" target="_blank">207 上帝至高 我愛稱讚</a></li>
+        <li><a href="http://youtu.be/YmAuC4d_kuE" target="_blank">208 心內莫為歹人不平</a></li>
+        <li><a href="http://youtu.be/MjrOyYfouPE" target="_blank">209 我曾吞忍聽候上帝</a></li>
+        <li><a href="http://youtu.be/6PUTE0LJQt4" target="_blank">210 若鹿在直直走</a></li>
+        <li><a href="http://youtu.be/lTOH1XW7l9I" target="_blank">211 求上帝發出你的光</a></li>
+        <li><a href="http://youtu.be/0ykQNkHvQRk" target="_blank">212 上帝是阮逃閃所在</a></li>
+        <li><a href="http://youtu.be/3N0iwiIts7M" target="_blank">213 上帝講出來召天下</a></li>
+        <li><a href="http://youtu.be/gHyO0nWaPTc" target="_blank">214 上帝慈悲無窮無盡</a></li>
+        <li><a href="http://youtu.be/vRMp-L0w7QU" target="_blank">215 懇求天父莫得趕我</a></li>
+        <li><a href="http://youtu.be/GpIGweUS1VA" target="_blank">216 我心專務聽候上帝</a></li>
+        <li><a href="http://youtu.be/YS695nWgzVE" target="_blank">217 上帝真正是我上帝</a></li>
+        <li><a href="http://youtu.be/h1RIycuw2Is" target="_blank">218 主眷顧地 降落雨水</a></li>
+        <li><a href="http://youtu.be/uhJlulm9EBI" target="_blank">219 見若心肝清氣的人</a></li>
+        <li><a href="http://youtu.be/RAHFan3KZzY" target="_blank">220 萬軍的主 至聖的厝</a></li>
+        <li><a href="http://youtu.be/Ba67EH-xEsc" target="_blank">221 主 我上帝 天欲稱讚</a></li>
+        <li><a href="http://youtu.be/OtZ0E4kdPy8" target="_blank">222 上帝做阮代代幫助</a></li>
+        <li><a href="http://youtu.be/CNwdj-uqYD8" target="_blank">223 徛起至高隱密所在</a></li>
+        <li><a href="http://youtu.be/mW4xzCxFyEs" target="_blank">224 至高的主 阮愛感謝</a></li>
+        <li><a href="http://youtu.be/qY3dXzu0PoQ" target="_blank">225 上帝穿大威嚴作王</a></li>
+        <li><a href="http://youtu.be/uX922v9zrD0" target="_blank">226 咱著感謝上 主至大</a></li>
+        <li><a href="http://youtu.be/43FY0s4dA4o" target="_blank">227 全地攏著向主上帝</a></li>
+        <li><a href="http://youtu.be/mQNmhrO8cqs" target="_blank">228 全地著向主上帝</a></li>
+        <li><a href="http://youtu.be/zuXuQNr10_8" target="_blank">229 全地著向主上帝來唱歌</a></li>
+        <li><a href="http://youtu.be/ilv37BtkzUs" target="_blank">230 天下萬邦 萬國 萬民</a></li>
+        <li><a href="http://youtu.be/DsI2rYEOcPI" target="_blank">231 著向上帝來唱新歌</a></li>
+        <li><a href="http://youtu.be/10efNcFqRJI" target="_blank">232 我心謳咾主</a></li>
+        <li><a href="http://youtu.be/-xqy6-TOQak" target="_blank">233 至大主上帝 你名是至聖</a></li>
+        <li><a href="http://youtu.be/xacB7P1_sN4" target="_blank">234 我心實在謳咾</a></li>
+        <li><a href="http://youtu.be/VAXqhveUpHo" target="_blank">235 恁著稱謝至大上帝</a></li>
+        <li><a href="http://youtu.be/ph7lpgsVVn4" target="_blank">236 謳咾主 主的子兒著謳咾</a></li>
+        <li><a href="http://youtu.be/5szI_wZnfMI" target="_blank">237 ㄧ切榮光莫歸互阮</a></li>
+        <li><a href="http://youtu.be/SwQA_zKoLiU" target="_blank">238 我主上帝至高至大</a></li>
+        <li><a href="http://youtu.be/mU4f2Z4dqwY" target="_blank">239 萬國萬民著稱讚主上帝</a></li>
+        <li><a href="http://youtu.be/MEuFBYvvRV8" target="_blank">240 萬民啊 恁著謳咾</a></li>
+        <li><a href="http://youtu.be/NFY-RHMIdNE" target="_blank">241 恁著感謝上主至大</a></li>
+        <li><a href="http://youtu.be/-K5yC1dwGsc" target="_blank">242 我的目睭欲攑高來向山</a></li>
+        <li><a href="http://youtu.be/k_ukqVsoqvA" target="_blank">243 恁以色列族著照誠實講</a></li>
+        <li><a href="http://youtu.be/dHHBg5ZXoPg" target="_blank">244 人對我講 今咱來去</a></li>
+        <li><a href="http://youtu.be/wNN-vjKet9U" target="_blank">245 厝若毋是主給咱起</a></li>
+        <li><a href="http://youtu.be/Kff0rU8CXkI" target="_blank">246 我對深深陷坑</a></li>
+        <li><a href="http://youtu.be/-YJFNhsK_O4" target="_blank">247 恁著感謝主上帝</a></li>
+        <li><a href="http://youtu.be/n_ZpXChIw1Y" target="_blank">248 我的上帝 全能君王</a></li>
+        <li><a href="http://youtu.be/2R6-MbtfQfg" target="_blank">249 恁著對主出聲吟詩</a></li>
+        <li><a href="http://youtu.be/FjouwEy_iz0" target="_blank">250 著謳咾主上帝</a></li>
+        <li><a href="http://youtu.be/acNvl7QBucY" target="_blank">251 著謳咾主</a></li>
+        <li><a href="http://youtu.be/HjRajMmo-6c" target="_blank">252 至大主宰 你造的物</a></li>
+        <li><a href="http://youtu.be/SSn4hv9qMhM" target="_blank">253 上帝的教會毋是</a></li>
+        <li><a href="http://youtu.be/Jje8MjSID5I" target="_blank">254 基督做咱堅固地基</a></li>
+        <li><a href="http://youtu.be/aeuLSX7s-TE" target="_blank">255 聖會獨一的地基</a></li>
+        <li><a href="http://youtu.be/n8GdTycnMVM" target="_blank">256 耶穌聖會上帝設立</a></li>
+        <li><a href="http://youtu.be/3zWRD6QYTr8" target="_blank">257 求主奮興教會</a></li>
+        <li><a href="http://youtu.be/G1EK6KLhSgs" target="_blank">258 請咱齊聲感謝上帝</a></li>
+        <li><a href="http://youtu.be/ZgXmkKDKqBE" target="_blank">259 上帝設立聖教會(台)</a></li>
+        <li><a href="http://youtu.be/kZloYvZsY_0" target="_blank">259 基督教會神所立(華)</a></li>
+        <li><a href="http://youtu.be/e7QINOjP2Vs" target="_blank">260 天邊海角多多子民</a></li>
+        <li><a href="http://youtu.be/izGj6zLdxbw" target="_blank">261 大家來 來謳咾主上帝</a></li>
+        <li><a href="http://youtu.be/VYisO_p3wQg" target="_blank">262 來敬拜主</a></li>
+        <li><a href="http://youtu.be/y3E5dIEr1kY" target="_blank">263 主 阮就近你</a></li>
+        <li><a href="http://youtu.be/rqSB5YoiZug" target="_blank">264 耶穌 阮來救你</a></li>
+        <li><a href="http://youtu.be/Mhs7x9ocQVs" target="_blank">265 咱著敬拜主上帝</a></li>
+        <li><a href="http://youtu.be/5XSVPVU4dtk" target="_blank">266 請來 咱著向主唱歌</a></li>
+        <li><a href="http://youtu.be/2yL5-CNx3Cs" target="_blank">267 咱著唱歌謳咾主上帝</a></li>
+        <li><a href="http://youtu.be/7FUbQIp-JQ0" target="_blank">268 兄弟姊妹歡喜進入聖殿</a></li>
+        <li><a href="http://youtu.be/snXUlTHTfTI" target="_blank">269 來謳咾上主(台)</a></li>
+        <li><a href="http://youtu.be/7aiEHXSzDek" target="_blank">269 來讚美上主(華)</a></li>
+        <li><a href="http://youtu.be/Tz-gmF9HhgA" target="_blank">270 著恬靜 著恭敬</a></li>
+        <li><a href="http://youtu.be/IosWFPAGjE4" target="_blank">271 上帝降臨佇他的聖殿</a></li>
+        <li><a href="http://youtu.be/zidK0KzA28o" target="_blank">272 阮愛上帝聖殿</a></li>
+        <li><a href="http://youtu.be/9-QlI9HLQog" target="_blank">273 至尊的主宰 上帝是聖</a></li>
+        <li><a href="http://youtu.be/ry-bapkj4_w" target="_blank">274 今日是主設立做聖</a></li>
+        <li><a href="http://youtu.be/-DWEkzNa8wE" target="_blank">275 至聖真光 我就你</a></li>
+        <li><a href="http://youtu.be/FMTtDowsPFE" target="_blank">276 至聖 至高主上帝</a></li>
+        <li><a href="http://youtu.be/-f8gU5y450E" target="_blank">277 至聖 至高上帝</a></li>
+        <li><a href="http://youtu.be/wF-c65UvIZI" target="_blank">278 聖徒聚集主聖殿</a></li>
+        <li><a href="http://youtu.be/nQQ6bYUgPaM" target="_blank">279 懇求上帝憐憫</a></li>
+        <li><a href="http://youtu.be/N1E_AfMIfVs" target="_blank">280 上帝律法第四誡</a></li>
+        <li><a href="http://youtu.be/cycb4W8dLhA" target="_blank">281 上帝此時臨到</a></li>
+        <li><a href="http://youtu.be/AJjQwoYnPpY" target="_blank">282 感謝主 著感謝主</a></li>
+        <li><a href="http://youtu.be/m54-PYFxE5w" target="_blank">283 野外禮拜有意義</a></li>
+        <li><a href="http://youtu.be/L43qLSizdpg" target="_blank">284 請來 我主</a></li>
+        <li><a href="http://youtu.be/SCgIPEN3H2E" target="_blank">285 請來 恩典的君王</a></li>
+        <li><a href="http://youtu.be/qw83pVEcxcA" target="_blank">286 懇求聖神今降臨</a></li>
+        <li><a href="http://youtu.be/6iCikmKZKWA" target="_blank">287 主 阮感謝謳咾你</a></li>
+        <li><a href="http://youtu.be/9A5ViumthhI" target="_blank">288 榮光 榮光 榮光</a></li>
+        <li><a href="http://youtu.be/Xvd7FYtisbQ" target="_blank">289 榮光歸佇至高上帝</a></li>
+        <li><a href="http://youtu.be/s2g7wStj_H0" target="_blank">290 榮光歸主</a></li>
+        <li><a href="http://youtu.be/WEBhXQqE4DI" target="_blank">291 稱讚主你榮光</a></li>
+        <li><a href="http://youtu.be/QnumtgYQ-xM" target="_blank">292 聖哉 聖哉 聖哉</a></li>
+        <li><a href="http://youtu.be/XbdQSHZRpvw" target="_blank">293 聖哉 聖哉 聖哉</a></li>
+        <li><a href="http://youtu.be/Hx30w3sbpbY" target="_blank">294 聖哉 聖哉 聖哉</a></li>
+        <li><a href="http://youtu.be/uZrvVbP21XQ" target="_blank">295 哈利路亞</a></li>
+        <li><a href="http://youtu.be/rjjYzTnOKJk" target="_blank">296 哈利路亞</a></li>
+        <li><a href="http://youtu.be/1t3MdGh_kZc" target="_blank">297 齊聲吟 阿們</a></li>
+        <li><a href="http://youtu.be/JHB4u-3URis" target="_blank">298 快樂 快樂 阮來敬拜</a></li>
+        <li><a href="http://youtu.be/VLofjrlMzaE" target="_blank">299 咱著來敬拜 謳咾主上帝</a></li>
+        <li><a href="http://youtu.be/N-lCrbXagBE" target="_blank">300 阮真感謝你 至聖仁愛</a></li>
+        <li><a href="http://youtu.be/RQkk1XwzcG8" target="_blank">301 萬民謳咾耶穌尊名</a></li>
+        <li><a href="http://youtu.be/_nOB7Vq1im4" target="_blank">302 萬民啊 恁著謳咾</a></li>
+        <li><a href="http://youtu.be/c6KS-f1-8KE" target="_blank">303 (華語) 主 我要讚美你</a></li>
+        <li><a href="http://youtu.be/oKiLivPqi8c" target="_blank">303 主 我欲謳咾你</a></li>
+        <li><a href="http://youtu.be/-haUeb6RO8Y" target="_blank">304 我欲謳咾</a></li>
+        <li><a href="http://youtu.be/C15tKR9Fma8" target="_blank">305 我的心神 你著唱歌</a></li>
+        <li><a href="http://youtu.be/pFT-c_PnRgU" target="_blank">306 我的心 你著謳咾主</a></li>
+        <li><a href="http://youtu.be/o2vy0jDz55c" target="_blank">307 當聖神佇我的心</a></li>
+        <li><a href="http://youtu.be/2-9v6IHAIM0" target="_blank">308 阮欲唱歌來謳咾</a></li>
+        <li><a href="http://youtu.be/4rLKUSBgrpM" target="_blank">309 謳咾權能上主</a></li>
+        <li><a href="http://youtu.be/mskF1etXK7A" target="_blank">310 (台語) Rimuy sa maku 兄弟姊妹</a></li>
+        <li><a href="http://youtu.be/lLO-VNa-M20" target="_blank">310 (華語) Rimuy sa maku 兄弟姊妹</a></li>
+        <li><a href="http://youtu.be/9tuNizh4GGQ" target="_blank">311 感謝讚美主耶穌基督</a></li>
+        <li><a href="http://youtu.be/nlKiSvlAO-w" target="_blank">312 讚美耶穌</a></li>
+        <li><a href="http://youtu.be/5pF65AyJCW0" target="_blank">313 讚美上主的慈愛</a></li>
+        <li><a href="http://youtu.be/0m3n0SAQWMk" target="_blank">314 上帝慈愛何等奇妙</a></li>
+        <li><a href="http://youtu.be/xR_SdTYgJ38" target="_blank">315 天父恩典真正大</a></li>
+        <li><a href="http://youtu.be/wSGmyJfMcnU" target="_blank">316 快樂日 咱著歡喜</a></li>
+        <li><a href="http://youtu.be/AC-obaUH46U" target="_blank">317 上帝管理天及海</a></li>
+        <li><a href="http://youtu.be/74b4qki9cSw" target="_blank">318 早時猶太眾細子</a></li>
+        <li><a href="http://youtu.be/fF0J2A8zPq4" target="_blank">319 細漢囝仔的朋友</a></li>
+        <li><a href="http://youtu.be/IpinRuBn_P4" target="_blank">320 O hoa he 拍鼓跳舞 彈琴謳咾</a></li>
+        <li><a href="http://youtu.be/IiAAr4R3uog" target="_blank">321 我主 我救主 我真愛得完全</a></li>
+        <li><a href="http://youtu.be/_Y57F7xeAzw" target="_blank">322 我前若羊失迷</a></li>
+        <li><a href="http://youtu.be/NEoFueHsguY" target="_blank">323 貿稅的人上帝面前</a></li>
+        <li><a href="http://youtu.be/pMQumsVER2c" target="_blank">324 我罪極重 勿得推辭</a></li>
+        <li><a href="http://youtu.be/Eol87VCtmz0" target="_blank">325 咱人家己詳細問</a></li>
+        <li><a href="http://youtu.be/qKIEUeL9foo" target="_blank">326 心和平上帝子兒</a></li>
+        <li><a href="http://youtu.be/PHVDXyh3BjI" target="_blank">327 主上帝 求你鑒察我</a></li>
+        <li><a href="http://youtu.be/I-7wAs5rv9o" target="_blank">328 上帝的羊羔</a></li>
+        <li><a href="http://youtu.be/kU1v6YTJIdk" target="_blank">329 主 聽我祈禱</a></li>
+        <li><a href="http://youtu.be/0PJSAJuuUr4" target="_blank">330 主 聽阮祈禱</a></li>
+        <li><a href="http://youtu.be/UrGLZew78KQ" target="_blank">331 主阿 求你憐憫阮</a></li>
+        <li><a href="http://youtu.be/KrQOIfTz1qs" target="_blank">332 耶穌 著記得我</a></li>
+        <li><a href="http://youtu.be/LR-xskNWl2w" target="_blank">333 主 求你憐憫</a></li>
+        <li><a href="http://youtu.be/NyJjphHkd2I" target="_blank">334 主 求你憐憫阮</a></li>
+        <li><a href="http://youtu.be/GYQAPgvsHro" target="_blank">335 求主憐憫阮</a></li>
+        <li><a href="http://youtu.be/fydsumIg1lo" target="_blank">336 主 懇求你聽你子民哀求</a></li>
+        <li><a href="http://youtu.be/3qDR8GcAxgM" target="_blank">337 主 阮懇求你憐憫阮</a></li>
+        <li><a href="http://youtu.be/UWk518Cm2GY" target="_blank">338 懇求主憐憫阮</a></li>
+        <li><a href="http://youtu.be/Lb11Gv9_9yw" target="_blank">339 求主憐憫阮</a></li>
+        <li><a href="http://youtu.be/yk1Q208Ggyk" target="_blank">340 主 求你憐憫我</a></li>
+        <li><a href="http://youtu.be/EgQLHhAEBL0" target="_blank">341 我今專心迫切祈禱</a></li>
+        <li><a href="http://youtu.be/5miowshvUl8" target="_blank">342 請來 主真光</a></li>
+        <li><a href="http://youtu.be/C0aM4-d2DnY" target="_blank">343 (華)上主啊 求引領我們</a></li>
+        <li><a href="http://youtu.be/0utZTZvtpzI" target="_blank">344 救主耶穌 願你來聽</a></li>
+        <li><a href="http://youtu.be/2_MMYC2BdgQ" target="_blank">345 阮心歡喜吟詩出聲</a></li>
+        <li><a href="http://youtu.be/WurHFoStqEM" target="_blank">346 願我愈行及主愈倚</a></li>
+        <li><a href="http://youtu.be/BKzD--yVurk" target="_blank">347 主耶穌 我欲倚靠你</a></li>
+        <li><a href="http://youtu.be/UtU7qzDuPhY" target="_blank">348 求主教示阮祈禱</a></li>
+        <li><a href="http://youtu.be/SgIQB5tidIg" target="_blank">349 祈禱的時此時極好</a></li>
+        <li><a href="http://youtu.be/3AeMZk708O0" target="_blank">350 求主施大恩</a></li>
+        <li><a href="http://youtu.be/65G7sJbsZc0" target="_blank">351 上主的水泉有水滿滿</a></li>
+        <li><a href="http://youtu.be/RMfWf0NsBJU" target="_blank">352 聖會所行的禮儀</a></li>
+        <li><a href="http://youtu.be/-B-5O_1d7Ks" target="_blank">353 請看善良慈悲牧者</a></li>
+        <li><a href="http://youtu.be/4xukUF9CNYw" target="_blank">354 咱人既然帶罪出世</a></li>
+        <li><a href="http://youtu.be/eIxH_ScBpvY" target="_blank">355 阮今聚集及主坐桌</a></li>
+        <li><a href="http://youtu.be/ARe3WmeMAHg" target="_blank">356 主 我今就近愛見你的面</a></li>
+        <li><a href="http://youtu.be/ZnABYqClU_s" target="_blank">357 主 你真餅為阮來擘</a></li>
+        <li><a href="http://youtu.be/13zI4bGXuco" target="_blank">358 我今來倚主你面前</a></li>
+        <li><a href="http://youtu.be/keJVfGaYiI4" target="_blank">359 在早上帝默示聖經</a></li>
+        <li><a href="http://youtu.be/ZJ0qpUzhd0U" target="_blank">360 教會若ㄧ塊圓桌</a></li>
+        <li><a href="http://youtu.be/Q0TC9KA9pOY" target="_blank">361 求聖神感動阮謙卑</a></li>
+        <li><a href="http://youtu.be/SCBXynLo5sA" target="_blank">362 我心神著歡喜起來</a></li>
+        <li><a href="http://youtu.be/JS9NvoqwI2c" target="_blank">363 相及擘餅 咱同心來跪落</a></li>
+        <li><a href="http://youtu.be/4k8l3947GgU" target="_blank">364 食這餅 飲這杯</a></li>
+        <li><a href="http://youtu.be/C4cfSMieHb8" target="_blank">365 耶穌身軀替咱釘死</a></li>
+        <li><a href="http://youtu.be/sLTETFDJA2A" target="_blank">366 主 你身軀替我受拍破</a></li>
+        <li><a href="http://youtu.be/tNTge6eGoJ0" target="_blank">367 受主贖回 受主醫治</a></li>
+        <li><a href="http://www.youtube.com/watch?v=_EON8AkEl7g" target="_blank">368 受賣彼暝救主耶穌</a></li>
+        <li><a href="http://youtu.be/s8mxbqqYNZA" target="_blank">369 超越阮的想像</a></li>
+        <li><a href="http://youtu.be/FNXJ78XFvmA" target="_blank">370 咱奉獻聲音及才能</a></li>
+        <li><a href="http://youtu.be/_lO0egM3fNA" target="_blank">371 活命的餅為憐憫擘開</a></li>
+        <li><a href="http://youtu.be/Y0l8MVOalqA" target="_blank">372 主上帝有豐盛活命慈愛</a></li>
+        <li><a href="http://youtu.be/B_GfCTH_afY" target="_blank">373 救主耶穌 我立志</a></li>
+        <li><a href="http://youtu.be/ZxLSzTG_lZA" target="_blank">374 聽見救主出聲在叫</a></li>
+        <li><a href="http://youtu.be/d_gRj0YNOXM" target="_blank">375 著帶啥禮物</a></li>
+        <li><a href="http://youtu.be/w1_nbFzFCT0" target="_blank">376 聰明的人帶學識</a></li>
+        <li><a href="http://youtu.be/XJ8DUC57RQI" target="_blank">377 鼓舞大家甘奉獻</a></li>
+        <li><a href="http://youtu.be/jmk8kzw9OIk" target="_blank">378 主 求你鑑納阮虔誠奉獻</a></li>
+        <li><a href="http://youtu.be/xRWTgHU9ofg" target="_blank">379 願我會愈疼你 我主基督</a></li>
+        <li><a href="http://youtu.be/5EhGE0CpsLw" target="_blank">380 甘心的奉獻</a></li>
+        <li><a href="http://youtu.be/C9FciP5obKU" target="_blank">381 萬有受造歸榮光上帝</a></li>
+        <li><a href="http://youtu.be/wf6GrzKHXr8" target="_blank">382 我的性命獻互你</a></li>
+        <li><a href="http://youtu.be/3AeBRv96zmY" target="_blank">383 我今勸恁著獻家己</a></li>
+        <li><a href="http://youtu.be/kB3E-6GnC7A" target="_blank">384 主講 若欲做我學生</a></li>
+        <li><a href="http://youtu.be/jYQL8jHMEto" target="_blank">385 人生風波攪動無停</a></li>
+        <li><a href="http://youtu.be/_sJVbMCUrBg" target="_blank">386 天下萬邦 萬國 萬民</a></li>
+        <li><a href="http://youtu.be/tjt67yvZhbA" target="_blank">387 榮光歸聖父上帝</a></li>
+        <li><a href="http://youtu.be/jbLOyTqe2Og" target="_blank">388 榮光歸聖父上帝</a></li>
+        <li><a href="http://youtu.be/vtYrqBvLidk" target="_blank">389 謳咾上帝 至高 至尊</a></li>
+        <li><a href="http://youtu.be/U8_95DXHueE" target="_blank">390 謳咾天父 萬福本源</a></li>
+        <li><a href="http://youtu.be/p1i1-5nuuCk" target="_blank">391 謳咾天頂主宰</a></li>
+        <li><a href="http://youtu.be/_C1BdKWKsKU" target="_blank">392 謳咾上帝萬福本源</a></li>
+        <li><a href="http://youtu.be/t3VnMJpgHFI" target="_blank">393 謳咾全能恩典主宰</a></li>
+        <li><a href="http://youtu.be/WlaryJbuvOE" target="_blank">394 此時禮拜teh欲息</a></li>
+        <li><a href="http://youtu.be/TOXdqS3CbpA" target="_blank">395 至聖天父 阮感謝你</a></li>
+        <li><a href="http://youtu.be/7riXGxD1P6c" target="_blank">396 今欲散會 求主賜福</a></li>
+        <li><a href="http://youtu.be/gYFQuhqCDIw" target="_blank">397 願主賜福保護你</a></li>
+        <li><a href="http://youtu.be/F58TxOTYi6k" target="_blank">398 願咱救主耶穌基督</a></li>
+        <li><a href="http://youtu.be/NNUBgeqCW38" target="_blank">399 願上主大仁愛</a></li>
+        <li><a href="http://youtu.be/lLbbkVwJi_I" target="_blank">400 願主仁愛及你同在</a></li>
+        <li><a href="http://youtu.be/rsJwo2YgvWk" target="_blank">400 (華語) 願主的愛與你同在</a></li>
+        <li><a href="http://youtu.be/9Qj3uJRdZu4" target="_blank">401 願全能主上帝</a></li>
+        <li><a href="http://youtu.be/LiFHoycT1kE" target="_blank">402 懇求主你引導我腳步</a></li>
+        <li><a href="http://youtu.be/vQx6nNI8qIQ" target="_blank">403 主 差遣我</a></li>
+        <li><a href="http://youtu.be/wuZzLmNQb6w" target="_blank">404 (台語)日頭出來好天時</a></li>
+        <li><a href="http://youtu.be/DLop6dBXobE" target="_blank">404 (客語)日頭出來好天時</a></li>
+        <li><a href="http://youtu.be/jNhon8v40oI" target="_blank">405 主上帝 早起時你會聽我的聲</a></li>
+        <li><a href="http://youtu.be/RjiFPuaEQ38" target="_blank">406 主 你榮光充滿天</a></li>
+        <li><a href="http://youtu.be/2o2p7BIJJ-k" target="_blank">407 清早起來看</a></li>
+        <li><a href="http://youtu.be/-SBw7lrZHtI" target="_blank">407 (台語) 清早天昲光</a></li>
+        <li><a href="http://youtu.be/TH8nthuKvFk" target="_blank">408 (台語) 清早起來謳咾主</a></li>
+        <li><a href="http://youtu.be/dnKy_efs6QA" target="_blank">408 (華語) 清晨早起讚美神</a></li>
+        <li><a href="http://youtu.be/cfHEHYIXpuI" target="_blank">409 施恩的主永遠疼人</a></li>
+        <li><a href="http://youtu.be/Cox5zjep7uA" target="_blank">410 佇黎明清早</a></li>
+        <li><a href="http://youtu.be/p8M4Bls5ugk" target="_blank">411 阮的天父上帝</a></li>
+        <li><a href="http://youtu.be/SHOg8C8cOkg" target="_blank">412 羊群牧者 來阮中間</a></li>
+        <li><a href="http://youtu.be/Gxnp9OzclMM" target="_blank">413 今已經黃昏</a></li>
+        <li><a href="http://youtu.be/sE7q2SYdQmk" target="_blank">414 樹木今攏teh安眠</a></li>
+        <li><a href="http://youtu.be/sg0Xh7h34lc" target="_blank">415 上主所賜ㄧ日今過去</a></li>
+        <li><a href="http://youtu.be/orYtOrTr-rM" target="_blank">416 經過一日得主引導</a></li>
+        <li><a href="http://youtu.be/7BNS-82uslY" target="_blank">417 閣過ㄧ日時刻平安</a></li>
+        <li><a href="http://youtu.be/9P3iWPrZIpY" target="_blank">418 心靈日頭 主 我所疼</a></li>
+        <li><a href="http://youtu.be/LiPR9KfAc9Q" target="_blank">419 天頂細細金星</a></li>
+        <li><a href="http://youtu.be/No45swsva_o" target="_blank">420 上帝保守你</a></li>
+        <li><a href="http://youtu.be/CHev8bSBTsk" target="_blank">421 黃昏臨到 暗暝漸近</a></li>
+        <li><a href="http://youtu.be/RucKqJw50qM" target="_blank">422 烏暗四面罩倚</a></li>
+        <li><a href="http://youtu.be/3Gtt7oQZtv8" target="_blank">423 暗暝已經到</a></li>
+        <li><a href="http://youtu.be/C9DDxnIJvXY" target="_blank">424 (台語) 日頭落山彼一旁</a></li>
+        <li><a href="http://youtu.be/TWYnhRXxiGk" target="_blank">424 (客語) 日頭落山該一片</a></li>
+        <li><a href="http://youtu.be/dohg9BEGqDs" target="_blank">425 日頭已經落海</a></li>
+        <li><a href="http://youtu.be/UvJ2dD9FgQM" target="_blank">426 日落西山 暗罩山嶺</a></li>
+        <li><a href="http://youtu.be/f_ihLXSxoys" target="_blank">427 日斜西山 願主你及我住</a></li>
+        <li><a href="http://youtu.be/_J_GuJzln7Y" target="_blank">428 請看西山日欲落</a></li>
+        <li><a href="http://youtu.be/y7OPPSO46sw" target="_blank">429 至聖天父 歡喜的光</a></li>
+        <li><a href="http://youtu.be/0aCjI6jiG8I" target="_blank">430 西面頌</a></li>
+        <li><a href="http://youtu.be/qJ6f51iFr38" target="_blank">431 安然閣過一禮拜</a></li>
+        <li><a href="http://youtu.be/MiGUZL8RLhQ" target="_blank">432 天父極大閣慈悲</a></li>
+        <li><a href="http://youtu.be/NBkX5iPHhb4" target="_blank">433 ㄧ年過了閣ㄧ年</a></li>
+        <li><a href="http://youtu.be/94xIvTzYJcM" target="_blank">434 主有恩典大慈悲</a></li>
+        <li><a href="http://youtu.be/GLJmTfN7DQ8" target="_blank">435 咱大今家來吟詩</a></li>
+        <li><a href="http://youtu.be/mnLJ5c8NhvU" target="_blank">436 謳咾父上帝</a></li>
+        <li><a href="http://youtu.be/9DZTdMYt1e0" target="_blank">436 (華語) 讚美聖天父</a></li>
+        <li><a href="http://youtu.be/3-3rmxWzNt0" target="_blank">437 今日是收成感恩日</a></li>
+        <li><a href="http://youtu.be/lUH7Sd4YIpM" target="_blank">438 阮犁田撒好種籽</a></li>
+        <li><a href="http://youtu.be/HCK9puCVxEM" target="_blank">439 日月如梭若水teh流</a></li>
+        <li><a href="http://youtu.be/IpvgBMi_nQo" target="_blank">440 同心聚集主聖會</a></li>
+        <li><a href="http://youtu.be/wwsG9kS_qss" target="_blank">441 上帝聖神引導保護</a></li>
+        <li><a href="http://youtu.be/RbtajtH5bi0" target="_blank">442 阮同心為此人聚集</a></li>
+        <li><a href="http://youtu.be/H_k9sQkrxUg" target="_blank">443 阮今佇主聖殿</a></li>
+        <li><a href="http://youtu.be/JMBfUfhLeNw" target="_blank">444 主 你召命何等清楚</a></li>
+        <li><a href="http://youtu.be/6CHgQFoibDU" target="_blank">445 耶穌聖會照制度</a></li>
+        <li><a href="http://youtu.be/oZQYMFUiMeI" target="_blank">446 聖會應該有執事</a></li>
+        <li><a href="http://youtu.be/ZfTyniGyc1Q" target="_blank">447 (定基) 全能天父是萬富有</a></li>
+        <li><a href="http://youtu.be/mZG242ChIYg" target="_blank">447 (獻堂) 全能天父是萬富有</a></li>
+        <li><a href="http://youtu.be/HBkfA9vj34g" target="_blank">448 願父上帝此時降臨</a></li>
+        <li><a href="http://youtu.be/uSIEiByi3tM" target="_blank">449 基督是咱家庭的主</a></li>
+        <li><a href="http://youtu.be/3dHfSgf6pnk" target="_blank">450 懇求上帝施恩賜福</a></li>
+        <li><a href="http://youtu.be/8M7YqCFWDTk" target="_blank">451 咱人踮此世間</a></li>
+        <li><a href="http://youtu.be/DH14QQUUxbM" target="_blank">452 (台語) 啥人出世無有父母</a></li>
+        <li><a href="http://youtu.be/8zqXWEwovyA" target="_blank">452 (華語) 人生世上誰無雙親</a></li>
+        <li><a href="http://youtu.be/pYmfqBL5UPI" target="_blank">453 (台語) 父母養育恩情深</a></li>
+        <li><a href="http://youtu.be/lLocm6gGBgc" target="_blank">453 (客語) 父母養育恩情深</a></li>
+        <li><a href="http://youtu.be/26nsEuF4HS4" target="_blank">454 上帝鴻恩講不盡</a></li>
+        <li><a href="http://youtu.be/Qz1_iN9dO8w" target="_blank">455 天父 阮大家齊聲</a></li>
+        <li><a href="http://youtu.be/S9fUfeUDLZQ" target="_blank">456 咱著歡喜</a></li>
+        <li><a href="http://youtu.be/AIaMZ0H25xw" target="_blank">456 (母親節) 咱著歡喜</a></li>
+        <li><a href="http://youtu.be/meOAVK57PLQ" target="_blank">456 (結婚禮拜) 咱著歡喜</a></li>
+        <li><a href="http://youtu.be/q26k-RhiVQM" target="_blank">457 今日大家聚集歡喜</a></li>
+        <li><a href="http://youtu.be/GZPdu32EKY0" target="_blank">458 懇求至尊的天父</a></li>
+        <li><a href="http://youtu.be/_EmI4m8hQVE" target="_blank">459 上帝設立萬國</a></li>
+        <li><a href="http://youtu.be/xfPB6mrFB90" target="_blank">460 台灣經濟腳步緊</a></li>
+        <li><a href="http://youtu.be/XgPQzFv2otY" target="_blank">461 願主保護咱後會有期</a></li>
+        <li><a href="http://youtu.be/L5Ca3SkoE_A" target="_blank">462 你若出外遠途旅行</a></li>
+        <li><a href="http://youtu.be/c0bUWXDdEgg" target="_blank">463 人生不時有挑戰</a></li>
+        <li><a href="http://youtu.be/mnWGRot4bG8" target="_blank">464 (台語) 吾等今日來掃墓</a></li>
+        <li><a href="http://youtu.be/nJumWUqVAF8" target="_blank">464 (客語) 恩等今日來掃墓</a></li>
+        <li><a href="http://youtu.be//BgSK-UsCRJI" target="_blank">465 咱人性命無定著</a></li>
+        <li><a href="http://youtu.be/dNqrI5VmAH4" target="_blank">466 佇彼旁榮光土地</a></li>
+        <li><a href="http://youtu.be/QELmoijCvPI" target="_blank">467 數念過往親人朋友</a></li>
+        <li><a href="http://youtu.be/YRA9k0-14mQ" target="_blank">468 萬國萬人攏有ㄧ擺</a></li>
+        <li><a href="http://youtu.be/0Ksorgu6FwQ" target="_blank">469 上帝偉大奇妙大作為</a></li>
+        <li><a href="http://youtu.be/kB2NlMr2qw0" target="_blank">470 活命源頭 萬國主宰</a></li>
+        <li><a href="http://youtu.be/ugOXGGhWfE4" target="_blank">471 互全地兒童有向望</a></li>
+        <li><a href="http://youtu.be/JMrvFbY0bNY" target="_blank">472 和平的主上帝</a></li>
+        <li><a href="http://youtu.be/Bf2aySExf4Y" target="_blank">473 ㄧ切受造期待和平</a></li>
+        <li><a href="http://youtu.be/CLvUP43re0o" target="_blank">474 攑目來看天父聖山</a></li>
+        <li><a href="http://youtu.be/6_QidrRhCAE" target="_blank">475 上帝使者有多多面貌</a></li>
+        <li><a href="http://youtu.be/1c_QXOQnvpk" target="_blank">476 全能至尊的神</a></li>
+        <li><a href="http://youtu.be/j3Z_DW_psDw" target="_blank">477 天父 阮懇求你</a></li>
+        <li><a href="http://youtu.be/-YNl4SQ-fDc" target="_blank">478 疼痛上帝 和平人君</a></li>
+        <li><a href="http://youtu.be/nx2xSd8mefo" target="_blank">479 看破此個破碎的世界</a></li>
+        <li><a href="http://youtu.be/sA87RCtWEJY" target="_blank">480 世界屬主眾朋友</a></li>
+        <li><a href="http://youtu.be/bcMHI3TapLI" target="_blank">481 咱對基督的恩典得著合一</a></li>
+        <li><a href="http://youtu.be/L1NfJyBNAzY" target="_blank">482 請來 和平人君</a></li>
+        <li><a href="http://youtu.be/9Bhi5t7mVQQ" target="_blank">483 佇主內無分東西</a></li>
+        <li><a href="http://youtu.be/zbEdxPXcNTE" target="_blank">484 創造宇宙星辰上帝</a></li>
+        <li><a href="http://youtu.be/UZXjEAWTHDc" target="_blank">485 主 助阮互相接納</a></li>
+        <li><a href="http://youtu.be/WgQZn1lOoG0" target="_blank">486 兄弟姊妹和睦徛起</a></li>
+        <li><a href="http://youtu.be/AuMpVMymIwE" target="_blank">487 耶穌疼我 耶穌疼我</a></li>
+        <li><a href="http://youtu.be/U-g5ggtUyVg" target="_blank">488 主耶穌心真慈悲</a></li>
+        <li><a href="http://youtu.be/bJAIOmYhCeM" target="_blank">489 主欲閣來 主欲閣來</a></li>
+        <li><a href="http://youtu.be/JfvXD8mN95w" target="_blank">490 年少青春若日頭</a></li>
+        <li><a href="http://youtu.be/uOoo2HRGKog" target="_blank">491 今佇青年時代</a></li>
+        <li><a href="http://youtu.be/-1PPm7r5Sa8" target="_blank">492 主 當我有氣力的時</a></li>
+        <li><a href="http://youtu.be/0T_73DX0_GY" target="_blank">493 人生風雲行到晚年</a></li>
+        <li><a href="http://youtu.be/Oc5r7LLcknI" target="_blank">494 對馬利亞出世耶穌</a></li>
+        <li><a href="http://youtu.be/7HXLVJQwz8s" target="_blank">495 上主是我ㄧ切向望</a></li>
+        <li><a href="http://youtu.be/i0Ve2swa5-o" target="_blank">496 主 我上帝 求你賞賜我智慧</a></li>
+        <li><a href="http://youtu.be/KMbW3DnJPCo" target="_blank">497 (台語) 敬拜上帝有智慧</a></li>
+        <li><a href="http://youtu.be/-4bYlG4Bp5E" target="_blank">497 (客語) 敬拜上帝有智慧</a></li>
+        <li><a href="http://youtu.be/hB0JuGlr1_w" target="_blank">498 主的福音真道理</a></li>
+        <li><a href="http://youtu.be/rndBITWjN_c" target="_blank">499 (華語) 讓我們盡全心來遵行主的道</a></li>
+        <li><a href="http://youtu.be/qD1S4xm-pH0" target="_blank">500 你心志著換新</a></li>
+        <li><a href="http://www.youtube.com/watch?v=P1073p_IoTg" target="_blank">501 父公信仰萬世永存</a></li>
+        <li><a href="http://youtu.be/beQ9cVaoEVY" target="_blank">502 主將細子咱交代</a></li>
+        <li><a href="http://youtu.be/VWd2L6o441w" target="_blank">503 ㄧ位真神主上帝</a></li>
+        <li><a href="http://youtu.be/ygNsmrFhX9c" target="_blank">503 (西拉雅語) ㄧ位真神主上帝</a></li>
+        <li><a href="http://youtu.be/LQuKgQi1J5g" target="_blank">504 心內散赤有大福氣</a></li>
+        <li><a href="http://youtu.be/XpKnKUoeaK0" target="_blank">505 我欲忠實</a></li>
+        <li><a href="http://youtu.be/AsCL-6DMKXw" target="_blank">506 拜上帝的子兒</a></li>
+        <li><a href="http://youtu.be/ZDKs7NNuCfE" target="_blank">507 耶穌雙手慈悲</a></li>
+        <li><a href="http://youtu.be/0wpmXsIa5-k" target="_blank">508 耶穌憐憫人</a></li>
+        <li><a href="http://youtu.be/7we_OuzgCIM" target="_blank">509 聖子耶穌踮地上</a></li>
+        <li><a href="http://youtu.be/iDNQNGar67w" target="_blank">510 殷勤作工 無嫌勞苦</a></li>
+        <li><a href="http://youtu.be/mK-GQeOukb8" target="_blank">511 主 你交代我工程</a></li>
+        <li><a href="http://youtu.be/ksi15yrM1ew" target="_blank">512 人人攏真殷勤</a></li>
+        <li><a href="http://youtu.be/AwajrzLPdAU" target="_blank">513 主互咱對母胎成形</a></li>
+        <li><a href="http://youtu.be/IY5CnHw3yys" target="_blank">514 感謝主 賜水 土地 空氣</a></li>
+        <li><a href="http://youtu.be/YxulAYTJ6eU" target="_blank">515 山野青翠花芬馨</a></li>
+        <li><a href="http://youtu.be/JpCTKtIv_BE" target="_blank">516 上帝交代人類管理</a></li>
+        <li><a href="http://youtu.be/zGjhNg7jgFU" target="_blank">517 咱的鄉土主所賜</a></li>
+        <li><a href="http://youtu.be/Qw1FIn24EHM" target="_blank">518 上帝賜福台灣各境</a></li>
+        <li><a href="http://youtu.be/LRFjgLpz5ac" target="_blank">519 為此塊土地阮誠心祈禱</a></li>
+        <li><a href="http://youtu.be/RzOEMNLNcNM" target="_blank">520 至聖的天父 求你俯落聽</a></li>
+        <li><a href="http://youtu.be/cGReYoRMxvA" target="_blank">521 你若欠缺真失望</a></li>
+        <li><a href="http://youtu.be/Do2UhH6TR7k" target="_blank">522 仁愛是敖寬容閣有慈悲</a></li>
+        <li><a href="http://youtu.be/f0hSNSdMJyM" target="_blank">523 見若有仁愛</a></li>
+        <li><a href="http://youtu.be/2qgBD7htDyE" target="_blank">524 主基督 你的擔阮著擔</a></li>
+        <li><a href="http://youtu.be/JMPrEXDawxM" target="_blank">525 阮爲萬民求主照顧</a></li>
+        <li><a href="http://youtu.be/OCIhvrwq3Dw" target="_blank">526 何等的幸福</a></li>
+        <li><a href="http://youtu.be/k8U1qfeQTio" target="_blank">527 咱攏成做ㄧ家人</a></li>
+        <li><a href="http://youtu.be/11mgYpgZ6pQ" target="_blank">528 我雖會講萬國語言</a></li>
+        <li><a href="http://youtu.be/Z0s-w0a8Y3M" target="_blank">529 佇我救主榮光面前</a></li>
+        <li><a href="http://youtu.be/VvTGxSyClsE" target="_blank">529 ( 佇我救主榮光面前</a></li>
+        <li><a href="http://youtu.be/DmK5Tk-IdMc" target="_blank">530 我所親愛兄弟姊妹</a></li>
+        <li><a href="http://youtu.be/2QMM-iH479U" target="_blank">531 咱著歡喜唱歌</a></li>
+        <li><a href="http://youtu.be/AzglslmSvmk" target="_blank">532 我認救主無驚見誚</a></li>
+        <li><a href="http://youtu.be/5-sXzIywFd8" target="_blank">533 我真愛講這故事</a></li>
+        <li><a href="http://youtu.be/pBSXwbFBBNk" target="_blank">534 有一項事實在好聽</a></li>
+        <li><a href="http://youtu.be/oKSgrJ7PL2A" target="_blank">535 福音鐘聲在大彈</a></li>
+        <li><a href="http://youtu.be/VxeS3sx_acE" target="_blank">536 天頂大開恩典的門</a></li>
+        <li><a href="http://youtu.be/STDngfeShec" target="_blank">537 迷路的人 著行倒轉</a></li>
+        <li><a href="http://youtu.be/K1pjNhPLOpg" target="_blank">538 我心大歡喜 主踮身邊</a></li>
+        <li><a href="http://youtu.be/u-9AKNca_ts" target="_blank">539 ㄧ滴一滴的水</a></li>
+        <li><a href="http://www.youtube.com/watch?v=GwPDElV_NHM" target="_blank">540 主在叫咱人</a></li>
+        <li><a href="http://youtu.be/llCWBh-7d2I" target="_blank">541 將疼傳出去</a></li>
+        <li><a href="http://youtu.be/NEbUZ7MuTXk" target="_blank">541 (華語) 把愛傳出去</a></li>
+        <li><a href="http://youtu.be/eY6UjrmG7Ww" target="_blank">542 耶穌基督 阮的主</a></li>
+        <li><a href="http://youtu.be/03XxcP4ZChY" target="_blank">543 我愛學主的款式</a></li>
+        <li><a href="http://youtu.be/zFgSYishSHo" target="_blank">544 主日學的學生</a></li>
+        <li><a href="http://youtu.be/20RUs2OlKfc" target="_blank">545 (華語)我們在生活上所犯過錯</a></li>
+        <li><a href="http://youtu.be/fqOVXCpyBiM" target="_blank">546 天父 我知ㄧ生光陰</a></li>
+        <li><a href="http://youtu.be/QusemrOPhlw" target="_blank">547 求主導我及你同行</a></li>
+        <li><a href="http://youtu.be/PDftdwLzuBU" target="_blank">548 我活是為基督</a></li>
+        <li><a href="http://youtu.be/joCp97VEngg" target="_blank">549 主啊 求你洗我的腳</a></li>
+        <li><a href="http://youtu.be/DaJdb74X8pA" target="_blank">550 我做基督兵丁</a></li>
+        <li><a href="http://youtu.be/R14NZxgA7Kg" target="_blank">551 好膽 好膽認基督</a></li>
+        <li><a href="http://youtu.be/Lt1NenBmSX0" target="_blank">552 大家勇敢同齊腳步</a></li>
+        <li><a href="http://youtu.be/mTnGMHI8cKQ" target="_blank">553 為主來做祂干證</a></li>
+        <li><a href="http://youtu.be/Fj8AYVOB8O8" target="_blank">554 透早去撒好種</a></li>
+        <li><a href="http://youtu.be/I__ku8BUln4" target="_blank">555 天下萬事有定期</a></li>
+        <li><a href="http://youtu.be/EaU0oCzv5zI" target="_blank">556 踏先人腳跡同腳步</a></li>
+        <li><a href="http://youtu.be/p9cXBE6CFMg" target="_blank">557 咱著尋求主上帝</a></li>
+        <li><a href="http://youtu.be/xWglJb_YX-s" target="_blank">558 懇求救主對我講明</a></li>
+        <li><a href="http://youtu.be/gZIFiGkPJH4" target="_blank">559 永遠在掌管宇宙的上帝</a></li>
+        <li><a href="http://youtu.be/qy9-93t1jbU" target="_blank">560 施恩上帝 榮光上帝</a></li>
+        <li><a href="http://youtu.be/RKH24B9NpJA" target="_blank">561 賜阮智慧及氣力</a></li>
+        <li><a href="http://youtu.be/NyqH35iX7GI" target="_blank">562 太空時代科學猛進</a></li>
+        <li><a href="http://youtu.be/l7GTVaaZd3c" target="_blank">563 美妙音樂互上帝得榮耀</a></li>
+        <li><a href="http://youtu.be/-pHxr9btQ_o" target="_blank">564 科學 技能 憐憫 慈愛</a></li>
+        <li><a href="http://youtu.be/m-q967MiZJQ" target="_blank">565 凡事免煩惱</a></li>
+        <li><a href="http://youtu.be/LXuZcYxIh38" target="_blank">566 出日落雨是主所定</a></li>
+        <li><a href="http://youtu.be/wUR37dXGWXI" target="_blank">567 請看空中眾鳥隻</a></li>
+        <li><a href="http://youtu.be/6rd5Zx8736Y" target="_blank">568 我有保護者佇身邊</a></li>
+        <li><a href="http://youtu.be/UujBhr4vAzA" target="_blank">569 我做耶穌的羊羔</a></li>
+        <li><a href="http://youtu.be/GPWV7b1hpPI" target="_blank">570 主上帝 我堅固石磐</a></li>
+        <li><a href="http://youtu.be/YfVFUQHOjqo" target="_blank">571 (客語) 主耶穌 主耶穌</a></li>
+        <li><a href="http://youtu.be/F5twU-J_NXw" target="_blank">572 心目向主堅固</a></li>
+        <li><a href="http://youtu.be/eA7KpHkr6E8" target="_blank">573 我的信心若無定</a></li>
+        <li><a href="http://www.youtube.com/watch?v=jqpp4HulnWg" target="_blank">574 暝日只有信靠主</a></li>
+        <li><a href="http://youtu.be/7NqPAKInMQg" target="_blank">575 耶穌召我來行天路</a></li>
+        <li><a href="http://youtu.be/jtNxi7A0H-0" target="_blank">576 你若甘願互上帝引導</a></li>
+        <li><a href="http://youtu.be/qFKYFdEcf2k" target="_blank">577 請來欣賞山野芳花</a></li>
+        <li><a href="http://youtu.be/YeIJX6BMsMU" target="_blank">578 人生親像山野草花</a></li>
+        <li><a href="http://youtu.be/bXzEIqbp5go" target="_blank">579 上帝子民佇曠野</a></li>
+        <li><a href="http://youtu.be/_vfmDWRB76c" target="_blank">580 我心大歡喜 我的嘴著吟詩</a></li>
+        <li><a href="http://www.youtube.com/watch?v=66J1N7Mq0kY" target="_blank">581 救主耶穌 萬福本源</a></li>
+        <li><a href="http://youtu.be/kosj1qaN7_k" target="_blank">582 慈悲疼痛大人君</a></li>
+        <li><a href="http://youtu.be/AjoMTaGLPac" target="_blank">583 願主伸你聖手</a></li>
+        <li><a href="http://youtu.be/BZH4jDo2OVM" target="_blank">584 至聖救主 罪人朋友</a></li>
+        <li><a href="http://youtu.be/9qogcmLQ1oE" target="_blank">585 或是厭倦 或是憂悶</a></li>
+        <li><a href="http://www.youtube.com/watch?v=Yv6eWqVjvFY" target="_blank">586 見若有人互罪苦楚</a></li>
+        <li><a href="http://youtu.be/5hTfnX5aCI8" target="_blank">587 我毋知明日會怎樣</a></li>
+        <li><a href="http://youtu.be/6WgM4hBhr9Q" target="_blank">588 外面啥人在拍門</a></li>
+        <li><a href="http://youtu.be/_6WMOfcTX44" target="_blank">589 親愛主 牽我手</a></li>
+        <li><a href="http://youtu.be/fe_NzMfKa2s" target="_blank">590 至好朋友就是耶穌</a></li>
+        <li><a href="http://youtu.be/UkZsg59T9iU" target="_blank">591 忠實眾信徒信仰深</a></li>
+        <li><a href="http://youtu.be/DNkXIeF-wuw" target="_blank">592 咱行世間的路</a></li>
+        <li><a href="http://youtu.be/wo4S5JaV_Hg" target="_blank">593 抵著試煉 災禍圍你真艱苦</a></li>
+        <li><a href="http://youtu.be/YkDZsZhF3R8" target="_blank">594 我心免僥疑</a></li>
+        <li><a href="http://youtu.be/xtKVAtSvLps" target="_blank">595 憂悶世間是迷路</a></li>
+        <li><a href="http://youtu.be/X92ypZ7f6ZY" target="_blank">596 拭目屎 莫啼哭</a></li>
+        <li><a href="http://youtu.be/cgnXP_xSRtI" target="_blank">597 秋葉會落 圍牆會倒壞</a></li>
+        <li><a href="http://youtu.be/NT9z8QbXB6g" target="_blank">598 雖然無花果無發樣</a></li>
+        <li><a href="http://youtu.be/IYpVfy95r6M" target="_blank">599 無論佇甚麼時陣</a></li>
+        <li><a href="http://youtu.be/B6pNJQyy4cg" target="_blank">600 佇加利利湖邊盧竹</a></li>
+        <li><a href="http://youtu.be/a1OJ_rppqSQ" target="_blank">601 全能上帝 聽我喉叫</a></li>
+        <li><a href="http://youtu.be/Q9bwieUpSdc" target="_blank">602 雨水不斷滴我門窗</a></li>
+        <li><a href="http://youtu.be/z9KMV5B_LYY" target="_blank">603 上帝作咱安全要塞</a></li>
+        <li><a href="http://youtu.be/ySZAdBx-bsk" target="_blank">604 莿帕互火燒</a></li>
+        <li><a href="http://youtu.be/FLzlIBYUGwQ" target="_blank">605 靠主恩典奇妙氣力在保護</a></li>
+        <li><a href="http://youtu.be/PVepskg7bd4" target="_blank">606 人生受迫離開家鄉</a></li>
+        <li><a href="http://youtu.be/V2yBiJjMRos" target="_blank">607 豈有平安 踮世間有艱難</a></li>
+        <li><a href="http://youtu.be/mKw6yuDh1zM" target="_blank">608 奇妙恩典何等甘甜</a></li>
+        <li><a href="http://youtu.be/jew-e0RUIVw" target="_blank">609 佇主疼痛內面</a></li>
+        <li><a href="http://youtu.be/c8E9U3tqUzs" target="_blank">610 耶穌是阮心所歡喜</a></li>
+        <li><a href="http://youtu.be/JqtI7sPIqaQ" target="_blank">611 隨主的人有幸福</a></li>
+        <li><a href="http://youtu.be/Ry_WH1i_MPs" target="_blank">612 境遇好歹變化無常</a></li>
+        <li><a href="http://youtu.be/x6-Zh9TjJeE" target="_blank">613 有時咱經過美麗清靜河墘</a></li>
+        <li><a href="http://youtu.be/WXFa5XfqNUQ" target="_blank">614 我心恬靜</a></li>
+        <li><a href="http://youtu.be/Z-9hDfGIvd0" target="_blank">615 佇主內面有喜樂</a></li>
+        <li><a href="http://youtu.be/yzd_YNLSbms" target="_blank">616 我踮佇主的疼痛</a></li>
+        <li><a href="http://youtu.be/KzZSp5FAjHA" target="_blank">617 上帝啊 佇你園內</a></li>
+        <li><a href="http://youtu.be/ypmp_aMR6oo" target="_blank">618 咱著信靠上帝</a></li>
+        <li><a href="http://youtu.be/p-HsqDX8-88" target="_blank">609 咱向前行佇上帝的光</a></li>
+        <li><a href="http://youtu.be/TE41ZmqvP1M" target="_blank">620 疼痛真光 大烏暗包圍中</a></li>
+        <li><a href="http://youtu.be/goiNPsimJsY" target="_blank">621 勇敢堅固信徒</a></li>
+        <li><a href="http://youtu.be/L8dqa7yF-uQ" target="_blank">622 至大上帝 願你導我</a></li>
+        <li><a href="http://youtu.be/x_x4L2ctPEc" target="_blank">623 透到天堂永活所在</a></li>
+        <li><a href="http://youtu.be/U43l4lnoSLw" target="_blank">624 耶穌猶導路</a></li>
+        <li><a href="http://youtu.be/mMVxQNc_1j4" target="_blank">625 咱人欲行天路</a></li>
+        <li><a href="http://youtu.be/mG0QxnGHmsE" target="_blank">626 天堂攏無苦難</a></li>
+        <li><a href="http://youtu.be/Oc2Odk1Uq3g" target="_blank">627 我心思想天頂好地</a></li>
+        <li><a href="http://youtu.be/SbjIPJoHqmE" target="_blank">628 我心思想好地</a></li>
+        <li><a href="http://youtu.be/x6qathoPu3A" target="_blank">629 佇天堂極榮光贏日晝</a></li>
+        <li><a href="http://youtu.be/PqnBVwM8skc" target="_blank">630 球根內有一蕊美花</a></li>
+        <li><a href="http://youtu.be/LikVNvhNPpk" target="_blank">631 (客語) 上帝疼惜世間人</a></li>
+        <li><a href="http://youtu.be/fJDeVYRCR0k" target="_blank">632 人生在過親像夏天</a></li>
+        <li><a href="http://youtu.be/GDu-1h3VS8o" target="_blank">633 數念聖徒歷代為主干證</a></li>
+        <li><a href="http://youtu.be/HaByPuRuMJI" target="_blank">634 我若出外人客</a></li>
+        <li><a href="http://youtu.be/dPJSJDKn8A8" target="_blank">635 願主旨意得成佇地</a></li>
+        <li><a href="http://youtu.be/sbLLIW1yehw" target="_blank">636 加利利清靜湖邊</a></li>
+        <li><a href="http://youtu.be/4_iIscTnLgI" target="_blank">637 上帝眾子兒報主互人知</a></li>
+        <li><a href="http://youtu.be/-S-1O5QyvR8" target="_blank">638 咱著出歡喜的聲</a></li>
+        <li><a href="http://youtu.be/3Nq1yUfcMGM" target="_blank">639 聖徒看見天頂座位</a></li>
+        <li><a href="http://youtu.be/t2-OR8p1PW4" target="_blank">640 二疊阿們</a></li>
+        <li><a href="http://youtu.be/dyK8sx1UxG0" target="_blank">641 二疊阿們</a></li>
+        <li><a href="http://youtu.be/cb4wkAF9_Rw" target="_blank">642 三疊阿們</a></li>
+        <li><a href="http://youtu.be/pJQ1AvVJRF8" target="_blank">643 三疊阿們</a></li>
+        <li><a href="http://youtu.be/gq2n8OuScls" target="_blank">644 七疊阿們</a></li>
+        <li><a href="http://youtu.be/TYypVSzNS2k" target="_blank">645 咱著來吟詩</a></li>
+        <li><a href="http://www.youtube.com/watch?v=r9gGu1_rUSM" target="_blank">646 耶穌招我來行天路</a></li>
+        <li><a href="http://youtu.be/dK80U1c5yVQ" target="_blank">647 至好朋友就是耶穌</a></li>
+        <li><a href="http://youtu.be/r3nTalmDNbU" target="_blank">648 傳道</a></li>
+        <li><a href="http://youtu.be/nyeCKSsXR4Q" target="_blank">649 及春風做伙迎接年冬</a></li>
+        <li><a href="http://youtu.be/hOkrEzsmVRs" target="_blank">650 讚美頌</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
