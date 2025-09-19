@@ -5,162 +5,295 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>司會參考資料</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      display: flex;
+    :root {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --accent-color: #0078d7;
+      --link-hover-color: #ff9900;
+      --nav-bg-color: #222222;
+      --border-color: #444;
     }
 
-    /* 側邊導覽欄 */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* 導覽列 */
     nav {
       position: fixed;
       top: 0;
       left: 0;
-      width: 200px;
+      width: 250px;
       height: 100%;
-      background-color: #0078d7;
-      padding: 20px 10px;
+      background-color: var(--nav-bg-color);
+      padding: 30px 20px;
       box-sizing: border-box;
+      overflow-y: auto;
+      border-right: 1px solid var(--border-color);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      transform: translateX(-100%); /* 預設在手機上隱藏 */
+    }
+    nav.show-nav {
+      transform: translateX(0); /* 顯示導覽列 */
     }
     nav h2 {
-      color: #fff;
-      font-size: 1.2em;
-      margin-bottom: 15px;
+      color: var(--text-color);
+      font-size: 1.5em;
+      margin-bottom: 25px;
       text-align: center;
+      letter-spacing: 1px;
     }
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     nav li {
-      margin: 12px 0;
-      text-align: center;
+      margin: 10px 0;
     }
     nav a {
       text-decoration: none;
-      color: #fff;
+      color: var(--text-color);
       display: block;
-      padding: 8px;
-      border-radius: 6px;
-      transition: background-color 0.3s;
+      padding: 12px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
     nav a:hover {
-      background-color: #005a9e;
+      background-color: var(--accent-color);
+      color: #ffffff;
     }
 
-    /* 主要內容 */
-    .content {
-      margin-left: 220px; /* 留出側邊欄的空間 */
+    /* 主要內容區域 */
+    main {
+      flex-grow: 1;
       padding: 40px;
-      flex: 1;
+      box-sizing: border-box;
+      transition: margin-left 0.3s ease-in-out;
+      width: 100%;
     }
-    h1 {
-      margin-bottom: 30px;
+
+    /* 手機版導覽列切換按鈕 */
+    .nav-toggle {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background-color: var(--nav-bg-color);
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1001;
+      border-radius: 5px;
+    }
+    .nav-toggle:hover {
+        background-color: var(--accent-color);
+    }
+    .nav-toggle .bar {
+      width: 25px;
+      height: 3px;
+      background-color: var(--text-color);
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* 在平板及桌機上顯示側邊欄 */
+    @media (min-width: 768px) {
+      body {
+        display: flex;
+      }
+      nav {
+        transform: translateX(0); /* 在大螢幕上永久顯示 */
+      }
+      main {
+        margin-left: 250px;
+        width: auto;
+      }
+      .nav-toggle {
+        display: none;
+      }
+    }
+
+    /* 內容區塊共用樣式 */
+    main h1 {
+      font-size: 2.5em;
+      color: var(--text-color);
       text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
     }
-    .category {
-      margin: 50px 0;
+    .content-section {
+      background-color: var(--nav-bg-color);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+      border: 1px solid var(--border-color);
     }
-    .category h2 {
-      font-size: 1.3em;
-      margin-bottom: 15px;
-      color: #0078d7;
-      border-bottom: 2px solid #ddd;
-      display: inline-block;
-      padding-bottom: 5px;
+    .content-section h2 {
+      color: var(--accent-color);
+      font-size: 1.8em;
+      margin-top: 0;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 10px;
     }
-    .link-list {
-      list-style: none;
-      padding: 0;
-      margin-top: 20px;
-    }
+    /* 通用連結列表樣式 */
     .link-list li {
-      margin: 12px 0;
+      background-color: #2e2e2e;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      margin-bottom: 10px; /* 添加間距 */
+    }
+    .link-list li:hover {
+      transform: translateY(-5px);
     }
     .link-list a {
-      display: inline-block;
+      color: var(--text-color);
       text-decoration: none;
-      color: #fff;
-      background-color: #0078d7;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+      display: block;
+      padding: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: color 0.3s ease;
     }
     .link-list a:hover {
-      background-color: #005a9e;
+      color: var(--link-hover-color);
+    }
+    /* 讚美詩歌列表樣式 */
+    .hymn-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+      list-style-type: none;
+      padding: 0;
+    }
+    .hymn-list li {
+      background-color: #2e2e2e;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .hymn-list li:hover {
+      transform: translateY(-5px);
+    }
+    .hymn-list a {
+      color: var(--text-color);
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: color 0.3s ease;
+    }
+    .hymn-list a:hover {
+      color: var(--link-hover-color);
+    }
+    .tip {
+      background-color: #2e2e2e;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .tip h3 {
+      color: var(--link-hover-color);
+      margin-top: 0;
+    }
+    .qr-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px; /* 將間距增加到 40px */
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .qr-item {
+        text-align: center;
+        width: 150px;
+    }
+    .qr-item img {
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
     }
 
-    /* QR Code 樣式 */
-    .qrcode-container {
-      display: flex;
-      gap: 100px; /* 調整 QR Code 間距 */
-      align-items: center; /* 垂直置中 */
-      margin-top: 10px; /* 調整與上方連結的間距 */
-    }
-    .qrcode-container img {
-      width: 200px; /* 調整 QR Code 圖片大小 */
-      height: 200px;
-      border: 1px solid #ccc; /* 可選：加上邊框 */
-      border-radius: 5px; /* 可選：加上圓角 */
-    }
-    .qrcode-container span {
-      font-size: 0.9em;
-      color: #555;
-      display: block; /* 讓文字佔據一行 */
-      text-align: center; /* 文字置中 */
-      margin-bottom: 5px; /* 調整文字與圖片的間距 */
-    }
-    .app-title {
-      font-size: 1.2em; /* 調整文字大小 */
-      font-weight: bold; /* 設定為粗體 */
-    }
   </style>
 </head>
 <body>
 
-  <nav>
-    <h2>導覽</h2>
+  <button class="nav-toggle" id="navToggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </button>
+
+  <nav id="nav">
+    <h2>導覽選單</h2>
     <ul>
-      <li><a href="#search">聖經與啟應文</a></li>
-      <li><a href="#hymnsvocal">台語聖詩(有人聲)</a></li>
+      <li><a href="#document-downloads">司會禮拜程序下載</a></li>
+      <li><a href="#taiwanese-bible">台語聖經</a></li>
+      <li><a href="#responsive-reading">啟應文</a></li>
+      <li><a href="#hymns-with-vocals">台語聖詩(有人聲)</a></li>
       <li><a href="#hymns">台語聖詩(無人聲)</a></li>
     </ul>
   </nav>
 
-  <div class="content">
-    <h1>司會參考資料</h1>
+  <main>
+    <h1>雙和長老教會台語司會參考資料</h1>
 
-    <div id="search" class="category">
-      <h2>聖經與啟應文</h2>
+    <div id="document-downloads" class="content-section">
+      <h2>司會禮拜程序下載</h2>
       <ul class="link-list">
-        <li><a href="https://bible.fhl.net/new/audio_hb.php?version=1" target="_blank">台語有聲聖經網站</a>
-          <div class="qrcode-container">
-            <div>
-              <span class="app-title">IOS 台語有聲聖經APP</span><br>
-              <img src="IMAGES/qrcode_apps.apple.com.png" alt="IOS QR Code">
-            </div>
-            <div>
-              <span class="app-title">Android 台語有聲聖經APP</span><br>
-              <img src="IMAGES/qrcode_play.google.com.png" alt="Android QR Code">
-            </div>
-          </div>
-        </li>
-        <li><a href="https://www.youtube.com/watch?v=3BM6C3Npb_8&list=PLa5Ky5ANCrzzet0bHbwnjyyLswor_V0Wa"  target="_blank">啟應文(點進去後右邊有播放清單可選)</a></li>
+        <li><a href="司會-雙和教會主日禮拜程序.docx" target="_blank">司會-雙和教會主日禮拜程序.docx</a></li>
       </ul>
     </div>
 
-    <div id="hymns" class="category">
+    <div id="taiwanese-bible" class="content-section">
+      <h2>台語聖經</h2>
+      <p>點選下方連結前往網站 或掃描 QR Code 即可下載相關 APP。</p>
+      <ul class="link-list">
+        <li><a href="https://bible.fhl.net/new/audio_hb.php?version=1" target="_blank">巴克禮台語有聲聖經</a></li>
+      </ul>
+      <div class="qr-container">
+          <div class="qr-item">
+              <img src="IMAGES\qrcode_apps.apple.com.png" alt="IOS 台語有聲聖經APP">
+              <p>IOS 台語有聲聖經APP</p>
+          </div>
+          <div class="qr-item">
+              <img src="IMAGES\qrcode_play.google.com.png" alt="Android 台語有聲聖經APP">
+              <p>Android 台語有聲聖經APP</p>
+          </div>
+      </div>
+    </div>
+
+    <div id="responsive-reading" class="content-section">
+      <h2>啟應文</h2>
+      <ul class="link-list">
+        <li><a href="https://www.youtube.com/watch?v=3BM6C3Npb_8&list=PLa5Ky5ANCrzzet0bHbwnjyyLswor_V0Wa" target="_blank">啟應文(點進去後右邊有播放清單可選)</a></li>
+      </ul>
+    </div>
+
+    <div id="hymns-with-vocals" class="content-section">
       <h2>台語聖詩(有人聲)</h2>
       <ul class="link-list">
         <li><a href="https://www.youtube.com/@user-aprilro/featured" target="_blank">直接在播放清單旁邊的搜尋鍵搜尋</a></li>
       </ul>
     </div>
 
-    <div id="hymns" class="category">
+    <div id="hymns" class="content-section">
       <h2>台語聖詩(無人聲)</h2>
-      <ul class="link-list">
-        <li><a href="http://youtu.be/y990k6j4ErE" target="_blank">001 聖哉 聖哉 聖哉</a></li>
+      <ul class="hymn-list">
+<li><a href="http://youtu.be/y990k6j4ErE" target="_blank">001 聖哉 聖哉 聖哉</a></li>
         <li><a href="http://youtu.be/npH1c8TYL1M" target="_blank">002 聖哉 聖哉 聖哉</a></li>
         <li><a href="http://youtu.be/T27e0rx_rzA" target="_blank">003 亞伯蘭的上帝</a></li>
         <li><a href="http://youtu.be/7PG88yUtCrs" target="_blank">004 天下萬國眾人著聽</a></li>
@@ -840,7 +973,28 @@
         <li><a href="http://youtu.be/hOkrEzsmVRs" target="_blank">650 讚美頌</a></li>
       </ul>
     </div>
-  </div>
 
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.getElementById('navToggle');
+      const nav = document.getElementById('nav');
+
+      navToggle.addEventListener('click', function() {
+        nav.classList.toggle('show-nav');
+      });
+      
+      // 點擊選單項目後自動關閉選單
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          if (window.innerWidth < 768) {
+            nav.classList.remove('show-nav');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
