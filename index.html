@@ -5,22 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>司會參考資料</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+    }
     :root {
-      --bg-color: #1a1a1a;
-      --text-color: #e0e0e0;
-      --accent-color: #0078d7;
-      --link-hover-color: #ff9900;
-      --nav-bg-color: #222222;
-      --border-color: #444;
+      --bg-color: #F8F4E6;
+      --text-color: #5C4F44;
+      --accent-color: #A08C75;
+      --link-hover-color: #C0A485;
+      --nav-bg-color: #F0EAD6;
+      --content-bg-color: #FDF9F0;
+      --border-color: #D4C9B4;
     }
 
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Noto Serif TC', serif, Arial, sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
       margin: 0;
       min-height: 100vh;
-      line-height: 1.6;
+      line-height: 1.8;
+      transition: margin-left 0.3s ease;
     }
 
     /* 導覽列 */
@@ -34,20 +40,21 @@
       padding: 30px 20px;
       box-sizing: border-box;
       overflow-y: auto;
-      border-right: 1px solid var(--border-color);
+      transform: translateX(-100%);
       transition: transform 0.3s ease-in-out;
       z-index: 1000;
-      transform: translateX(-100%); /* 預設在手機上隱藏 */
+      box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
     }
     nav.show-nav {
-      transform: translateX(0); /* 顯示導覽列 */
+      transform: translateX(0);
     }
     nav h2 {
       color: var(--text-color);
-      font-size: 1.5em;
-      margin-bottom: 25px;
+      font-size: 1.6em;
+      font-weight: 700;
+      margin-bottom: 30px;
       text-align: center;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
     }
     nav ul {
       list-style: none;
@@ -55,14 +62,14 @@
       margin: 0;
     }
     nav li {
-      margin: 10px 0;
+      margin: 15px 0;
     }
     nav a {
       text-decoration: none;
       color: var(--text-color);
       display: block;
       padding: 12px 15px;
-      border-radius: 5px;
+      border-radius: 8px;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
     nav a:hover {
@@ -73,9 +80,8 @@
     /* 主要內容區域 */
     main {
       flex-grow: 1;
-      padding: 40px;
+      padding: 50px 20px;
       box-sizing: border-box;
-      transition: margin-left 0.3s ease-in-out;
       width: 100%;
     }
 
@@ -83,83 +89,98 @@
     .nav-toggle {
       display: block;
       position: fixed;
-      top: 15px;
-      left: 15px;
-      background-color: var(--nav-bg-color);
-      color: var(--text-color);
-      border: 1px solid var(--border-color);
-      padding: 10px;
+      top: 20px;
+      left: 20px;
+      background-color: var(--accent-color);
+      color: #ffffff;
+      border: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
       cursor: pointer;
       z-index: 1001;
-      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
     }
     .nav-toggle:hover {
-        background-color: var(--accent-color);
+        background-color: var(--link-hover-color);
     }
     .nav-toggle .bar {
       width: 25px;
       height: 3px;
-      background-color: var(--text-color);
-      margin: 4px 0;
+      background-color: #ffffff;
+      margin: 4px auto;
       transition: 0.4s;
     }
 
-    /* 在平板及桌機上顯示側邊欄 */
+    /* 在平板及桌機上顯示導覽列 */
     @media (min-width: 768px) {
-      body {
-        display: flex;
-      }
-      nav {
-        transform: translateX(0); /* 在大螢幕上永久顯示 */
-      }
-      main {
-        margin-left: 250px;
-        width: auto;
-      }
       .nav-toggle {
         display: none;
+      }
+      nav {
+        transform: translateX(0);
+        left: 0;
+        right: auto;
+      }
+      body {
+        margin-left: 250px;
+        margin-right: 0;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
       }
     }
 
     /* 內容區塊共用樣式 */
     main h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       color: var(--text-color);
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       letter-spacing: 2px;
+      font-weight: 700;
     }
     .content-section {
-      background-color: var(--nav-bg-color);
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-bottom: 30px;
+      background-color: var(--content-bg-color);
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
       border: 1px solid var(--border-color);
     }
     .content-section h2 {
-      color: var(--accent-color);
-      font-size: 1.8em;
+      font-size: 2em;
       margin-top: 0;
-      border-bottom: 2px solid var(--accent-color);
-      padding-bottom: 10px;
+      color: var(--accent-color);
+      border-left: 5px solid var(--accent-color);
+      padding-left: 15px;
+      margin-bottom: 25px;
+      font-weight: 700;
     }
-/* 通用連結列表樣式 */
+    .content-section p {
+      color: var(--text-color);
+      font-size: 1.1em;
+    }
+    /* 通用連結列表樣式 */
     .link-list li {
-      background-color: #2e2e2e;
-      border-radius: 5px;
+      background-color: #FDF9F0;
+      border-radius: 8px;
       overflow: hidden;
-      transition: transform 0.2s ease;
-      margin-bottom: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
     .link-list li:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
     .link-list a {
       color: var(--text-color);
       text-decoration: none;
       display: block;
-      padding: 15px;
+      padding: 18px;
       transition: color 0.3s ease;
     }
     .link-list a:hover {
@@ -168,59 +189,63 @@
     /* 讚美詩歌列表樣式 */
     .hymn-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
       list-style-type: none;
       padding: 0;
     }
     .hymn-list li {
-      background-color: #2e2e2e;
-      border-radius: 5px;
+      background-color: var(--nav-bg-color);
+      border-radius: 10px;
       overflow: hidden;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     }
     .hymn-list li:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
     }
     .hymn-list a {
       color: var(--text-color);
       text-decoration: none;
       display: block;
-      padding: 15px;
+      padding: 20px;
       transition: color 0.3s ease;
     }
     .hymn-list a:hover {
       color: var(--link-hover-color);
     }
     .tip {
-      background-color: #2e2e2e;
-      padding: 20px;
-      border-radius: 8px;
+      background-color: var(--nav-bg-color);
+      padding: 25px;
+      border-radius: 10px;
       font-size: 1.1em;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      border-left: 5px solid var(--accent-color);
     }
     .tip h3 {
       color: var(--link-hover-color);
       margin-top: 0;
+      font-weight: 700;
     }
     .qr-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 80px; /* 將間距增加到 40px */
-        justify-content: center;
-        margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      margin-top: 30px;
     }
     .qr-item {
-        text-align: center;
-        width: 150px;
+      text-align: center;
+      width: 150px;
     }
     .qr-item img {
-        width: 100%;
-        height: auto;
-        border: 1px solid var(--border-color);
-        border-radius: 5px;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
   </style>
 </head>
 <body>
@@ -243,7 +268,7 @@
   </nav>
 
   <main>
-    <h1>雙和長老教會台語司會參考資料</h1>
+    <h1>雙和長老教會<br>台語司會參考資料</h1>
 
     <div id="document-downloads" class="content-section">
       <h2>司會禮拜程序下載</h2>
@@ -287,7 +312,7 @@
     <div id="hymns" class="content-section">
       <h2>台語聖詩(無人聲)</h2>
       <ul class="hymn-list">
-<li><a href="http://youtu.be/y990k6j4ErE" target="_blank">001 聖哉 聖哉 聖哉</a></li>
+        <li><a href="http://youtu.be/y990k6j4ErE" target="_blank">001 聖哉 聖哉 聖哉</a></li>
         <li><a href="http://youtu.be/npH1c8TYL1M" target="_blank">002 聖哉 聖哉 聖哉</a></li>
         <li><a href="http://youtu.be/T27e0rx_rzA" target="_blank">003 亞伯蘭的上帝</a></li>
         <li><a href="http://youtu.be/7PG88yUtCrs" target="_blank">004 天下萬國眾人著聽</a></li>
@@ -967,7 +992,7 @@
         <li><a href="http://youtu.be/hOkrEzsmVRs" target="_blank">650 讚美頌</a></li>
       </ul>
     </div>
-
+    
   </main>
 
   <script>
@@ -975,14 +1000,15 @@
       const navToggle = document.getElementById('navToggle');
       const nav = document.getElementById('nav');
 
-      navToggle.addEventListener('click', function() {
+      // 開啟/關閉導覽列
+      navToggle.addEventListener('click', () => {
         nav.classList.toggle('show-nav');
       });
-      
-      // 點擊選單項目後自動關閉選單
-      const navLinks = document.querySelectorAll('nav a');
+
+      // 點擊導覽列連結後自動隱藏導覽列 (手機版)
+      const navLinks = nav.querySelectorAll('a');
       navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', () => {
           if (window.innerWidth < 768) {
             nav.classList.remove('show-nav');
           }
@@ -990,5 +1016,6 @@
       });
     });
   </script>
+
 </body>
 </html>
