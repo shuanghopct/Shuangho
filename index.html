@@ -163,30 +163,7 @@
       color: var(--text-color);
       font-size: 1.1em;
     }
-    /* 通用連結列表樣式 */
-    .link-list li {
-      background-color: #FDF9F0;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    }
-    .link-list li:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-    .link-list a {
-      color: var(--text-color);
-      text-decoration: none;
-      display: block;
-      padding: 18px;
-      transition: color 0.3s ease;
-    }
-    .link-list a:hover {
-      color: var(--link-hover-color);
-    }
-    /* 讚美詩歌列表樣式 */
+    /* 讚美詩歌列表樣式 (通用) */
     .hymn-list {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -272,7 +249,7 @@
 
     <div id="document-downloads" class="content-section">
       <h2>司會禮拜程序下載</h2>
-      <ul class="link-list">
+      <ul class="hymn-list">
         <li><a href="司會-雙和教會主日禮拜程序.docx" target="_blank">司會-雙和教會主日禮拜程序.docx</a></li>
       </ul>
     </div>
@@ -280,7 +257,7 @@
     <div id="taiwanese-bible" class="content-section">
       <h2>台語聖經</h2>
       <p>點選下方連結前往網站 或掃描 QR Code 即可下載相關 APP。</p>
-      <ul class="link-list">
+      <ul class="hymn-list">
         <li><a href="https://bible.fhl.net/new/audio_hb.php?version=1" target="_blank">巴克禮台語有聲聖經</a></li>
       </ul>
       <div class="qr-container">
@@ -297,14 +274,14 @@
 
     <div id="responsive-reading" class="content-section">
       <h2>啟應文</h2>
-      <ul class="link-list">
+      <ul class="hymn-list">
         <li><a href="https://www.youtube.com/watch?v=3BM6C3Npb_8&list=PLa5Ky5ANCrzzet0bHbwnjyyLswor_V0Wa" target="_blank">啟應文(點進去後右邊有播放清單可選)</a></li>
       </ul>
     </div>
 
     <div id="hymns-with-vocals" class="content-section">
       <h2>台語聖詩(有人聲)</h2>
-      <ul class="link-list">
+      <ul class="hymn-list">
         <li><a href="https://www.youtube.com/@user-aprilro/featured" target="_blank">直接在播放清單旁邊的搜尋鍵搜尋</a></li>
       </ul>
     </div>
